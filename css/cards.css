@@ -1,0 +1,52 @@
+/*-----------------------Cards----------------------*/
+.lista-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: auto;
+    padding: 3rem 5rem;
+}
+
+.lista-cards img{
+    width: 250px; 
+    height: 250px;
+}
+
+.item-lista {
+    margin-bottom: 5%;
+    width: auto;
+}
+
+.card{
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    max-width: 400px;
+    height: fit-content;
+    margin-top: 2rem;
+    margin-right: 5%;
+    background-color: blue;
+}
+
+.card-content{
+    box-sizing: border-box;
+    height: fit-content;
+    padding: 0px 1.25rem 10%;
+}
+
+.card-text {
+    text-align: justify;
+    font-size: 1.55em;
+}
+
+.card-btn{
+    background: rgb(25, 25, 25);
+    border-radius: 10px;
+    color: #fffde1;
+    width: fit-content;
+    height: 40px;
+    margin: 0px auto;
+    font: normal 16px sans-serif;
+    font-weight: bold;
+}

@@ -1,0 +1,89 @@
+body {
+    font: 12px sans-serif;
+}
+
+body{
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    background-color: white;
+    display:flex;
+    width: 100%;
+    height: 100vh;
+}
+/*---------------------Fontes------------------------------*/
+p, a, li {
+    font-size: 1.25em;
+    text-decoration: none;
+    color: black;
+}
+
+/*---------------------Header------------------------------*/
+#logo{
+    width: 120px;
+    height: 120px;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+    margin-top: 0;
+}
+
+#menu a{
+    display: block;
+    padding: .5rem;
+    font-size: 1.25em;
+}
+
+#header{
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 130px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.search-box{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    background-color: #348ae7;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #f0f5fb;
+    font-size: 16px;
+    line-height: 40px;
+    width: 240px;
+}
+
+.search-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #348ae7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

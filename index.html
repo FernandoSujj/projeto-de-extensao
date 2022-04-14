@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" type = "text/css" href = "./css/style.css">
+    <link rel = "stylesheet" type = "text/css" href = "./css/index.css">
+    <link rel = "stylesheet" type = "text/css" href = "./css/cards.css">
+    <link rel = "stylesheet" type = "text/css" href = "./css/calculdadora.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+
+    <title>Página Inicial</title>
+</head>
+<body>
+    <header id = "header">
+        <a href = "index.html">
+            <img id = "logo" src= "./imagens/logo.png">
+        </a>
+        <nav id="nav">          
+            <ul id="menu">
+                <li><a href = "index.html" ><strong>Página Inicial</strong></a></li>
+                <li><a href = ""><strong>Texto</strong></a></li>
+                <li><a href = ""><strong>Texto</strong></a></li>
+                <li><a href = ""><strong>Texto</strong></a></li>    
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" class="search-txt" placeholder="Pesquisar">
+            <a href="#" class="search-btn">
+                <img src="loupe.svg.png" alt="Lupa" height="20" width="20">
+            </a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="calc-bar-collapsible">
+            <button id="calc-btn" type="button" class="collapsible">Calculadora
+                <i id="calc-icon" style="color: #000;" class="fa-solid fa-calculator fa"></i>
+            </button>
+            <div class="content">
+                <div class="full-calc-block">
+                    <div classe = "calc-outer">
+                        <div class="calc-container2">
+                            <form action="" name="Calculator" class = "calculadora-form">
+                                <input type="text" class="text maincolor" name="text1" disabled >
+                                <input type="text" class="text1 maincolor" name="text12" value="C" onclick="location.reload()"><br>        
+                                <input type="button" class="num maincolor" name="btn9" value="9" 
+                                            onclick="displaynum(btn9.value)">
+                                <input type="button" class="num maincolor" name="btn8" value="8" 
+                                            onclick="displaynum(btn8.value)">
+                                <input type="button" class="num maincolor" name="btn7" value="7" 
+                                            onclick="displaynum(btn7.value)">
+                                <input type="button" class="num blu" name="addbtn" value="+" 
+                                            onclick="displaynum(addbtn.value)"><br>
+                                <input type="button" class="num maincolor" name="btn6" value="6" 
+                                            onclick="displaynum(btn6.value)">
+                                <input type="button" class="num maincolor" name="btn5" value="5" 
+                                            onclick="displaynum(btn5.value)">
+                                <input type="button" class="num maincolor" name="btn4" value="4"
+                                            onclick="displaynum(btn4.value)">
+                                <input type="button" class="num pin" name="subbtn" value="-" 
+                                            onclick="displaynum(subbtn.value)"><br>
+                                <input type="button" class="num maincolor" name="btn3" value="3" 
+                                            onclick="displaynum(btn3.value)">
+                                <input type="button" class="num maincolor" name="btn2" value="2" 
+                                            onclick="displaynum(btn2.value)">
+                                <input type="button" class="num maincolor" name="btn1" value="1" 
+                                            onclick="displaynum(btn1.value)">
+                                <input type="button" class="num gre" name="mulbtn" value="*" 
+                                            onclick="displaynum(mulbtn.value)"><br>        
+                                <input type="button" class="num maincolor" name="dotbtn" value="." 
+                                            onclick="displaynum(dotbtn.value)">
+                                <input type="button" class="num maincolor" name="btn0" value="0" 
+                                            onclick="displaynum(btn0.value)">
+                                <input type="button" class="num pur" name="eqlbtn" value="=" 
+                                            onclick="text1.value=eval(text1.value)">
+                                <input type="button" class="num ora" name="divbtn" value="/" 
+                                            onclick="displaynum(divbtn.value)"><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./js/script.js"></script>
+</html>
