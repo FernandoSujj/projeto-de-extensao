@@ -3,13 +3,10 @@ body {
 }
 
 body{
-    margin: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     background-color: white;
-    display:flex;
-    width: 100%;
+    width: 100wh;
     height: 100vh;
 }
 /*---------------------Fontes------------------------------*/
@@ -24,43 +21,28 @@ p, a, li {
     width: 120px;
     height: 120px;
     margin-left: 20px;
-    margin-top: 0px;
-}
-
-#menu{
-    display: flex;
-    list-style: none;
-    gap: .5rem;
-    margin-top: 0;
-}
-
-#menu a{
-    display: block;
-    padding: .5rem;
-    font-size: 1.25em;
+    margin-top: -15px;
 }
 
 #header{
     box-sizing: border-box;
-    margin-left: 0;
-    margin-top: 0;
     width: 100%;
-    height: 130px;
-    padding: 1rem;
-    display: flex;
+    height: 90px;
+    padding: 0;
+    display: fixed;
     align-items: center;
-    justify-content: space-between;
     background-color: white;
 }
 
+/*---Barra de pesquisa--*/
 .search-box{
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    background-color: #348ae7;
+    position: relative;
+    background-color: white;
     height: 40px;
     padding: 10px;
-    border-radius: 40px;
+    border-left: 5px solid #46e3f5;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,7 +53,7 @@ p, a, li {
     background: none;
     outline: none;
     padding: 0;
-    color: #f0f5fb;
+    color: black;
     font-size: 16px;
     line-height: 40px;
     width: 240px;
@@ -81,9 +63,154 @@ p, a, li {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #348ae7;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/*--------------Menu-------------*/
+
+.sidebar{
+    position: fixed;
+    bottom: 0;
+    width: 240px;
+    right: -240px;
+    height: 100%;
+    background: rgb(25, 25, 25);
+    transition: all .5s ease;
+}
+
+.header-menu{
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: rgb(25, 25, 25);
+    user-select: none;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: space-between;
+}
+
+#a-menu{
+    color: white;
+    display: block;
+    height: 65px;
+    width: 100%;
+    line-height: 65px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    font-family: sans-serif;
+    transition: all .5s ease;
+}
+
+#a-menu.active, #a-menu:hover{
+    border-left: 5px solid #46e3f5;
+    color: white;
+}
+
+.sidebar #a-menu i{
+    font-size: 23px;
+    margin-right: 16px;
+}
+
+.sidebar #a-menu span{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#check{
+    display: none;
+}
+
+label #btn-menu, label #cancel-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 45px;
+    width: 45px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(25, 25, 25);
+    margin: 15px 30px;
+    background: rgb(25, 25, 25);
+    cursor: pointer;
+    text-align: center;
+    line-height: 45px;
+    transition: all .5s ease;
+}
+
+label #cancel-menu{
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ .sidebar{
+    right: 0;
+}
+
+#check:checked ~ label #btn-menu{
+    margin-right: 245px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ label #cancel-menu{
+    margin-right: 245px;
+    opacity: 1;
+    visibility: visible;
+}
+
+@media(max-width: 860px) {
+    .sidebar{
+        height: auto;
+        width: 70px;
+        left: 0;
+        margin: 100px;
+    }
+
+    .header-menu, #btn-menu, #btn-cancel{
+        display:none;
+    }
+    
+    span{
+        position: absolute;
+    }
+
+    #a-menu{
+        height: 60px;
+    }
+
+    .sidebar #a-menu, i{
+        margin-right: -10px;
+    }
+
+    #a-menu:hover{
+        width: 200px;
+        background: inherit;
+    }
+
+    .sidebar #a-menu:hover span{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+/*----------------Footer--------------*/
+
+footer{
+	background-color: rgb(25, 25, 25);
+    height: auto;
+    width: auto;
+    justify-items: center;
+}
+
+.icons-list {
+    display: flex;
+}
+
+.icon{
+    color: white;
+    margin-right: 10px;
+}

@@ -6,20 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel = "stylesheet" type = "text/css" href = "./css/style.css">
-    <link rel = "stylesheet" type = "text/css" href = "./css/index.css">
-    <link rel = "stylesheet" type = "text/css" href = "./css/cards.css">
+    <link rel = "stylesheet" type = "text/css" href = "./css/bhaskara.css">
     <link rel = "stylesheet" type = "text/css" href = "./css/calculdadora.css">
     <link href="fontawesome/css/all.css" rel="stylesheet">
 
-    <title>Página Inicial</title>
+    <title>Bhaskara</title>
 </head>
 <body>
     <header id = "header">
         <a href = "index.html">
             <img id = "logo" src= "./imagens/logo-png.png">
         </a>
-    </header>
-    <main>
         <!--Menu-->
         <div class="menu-lateral">
             <input type = "checkbox" id = "check">
@@ -49,6 +46,37 @@
                     </a>
             </div>
         </div>
+    </header>
+    <main>
+        <section class="calc-bhaskara">
+            <h1>Fórmula do 2 Grau</h1>
+            <form class="formbhaskara" id="form">
+                <label for="a">
+                Coloque o valor de a:
+                <input name="a" id="a" placeholder="a" type="number" />
+            </label>
+            <label for="kilos">
+                Coloque o valor de b:
+                <input name="b" id="b" placeholder="b" type="number" />
+            </label>
+            <label for="altura">
+                Coloque o valor de c:
+                <input name="c" id="c" placeholder="c" type="number" />
+            </label>
+            <div class="result">
+                <label for="x1">
+                x1
+                <input disabled="disabled" name="x1" id="x1" />
+              </label>
+              <label for="x2">
+                x2
+                <input disabled="disabled" name="x2" id="x2" />
+              </label>
+            </div>
+            <button>Calcular</button>
+            </form>
+            </section>
+        
         <!--Caculadora-->
         <div class="calc-bar-collapsible">
             <button id="calc-btn" type="button" class="collapsible">Calculadora
@@ -99,22 +127,10 @@
                 </div>
             </div>
         </div>
-        <section>
-            <p>Testeteste</p>   
-        <p>Testeteste</p>
-        <p>Testeteste</p>
-        <p>Testeteste</p>
-        <p>Testeteste</p>   
-        <p>Testeteste</p>
-        <p>Testeteste</p>
-        <p>Testeteste</p>
-        <p>Testeteste</p>   
-        <p>Testeteste</p>
-        <p>Testeteste</p>
-        <p>Testeteste</p>
-        </section>
+        
     </main>
-
+        <script src="./js/script.js"></script>
+        <script src="./js/bhaskara.js"></script>
     <footer>
         <div class="icons-list">
             <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-facebook-square fa-2x"></i></a>
@@ -124,5 +140,5 @@
         </div>
     </footer>
 </body>
-<script src="./js/script.js"></script>
+
 </html>
