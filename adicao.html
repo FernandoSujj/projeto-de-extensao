@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" type = "text/css" href = "./css/style.css">
+    <link rel = "stylesheet" type = "text/css" href = "./css/calculdadora.css">
+    <link rel = "stylesheet" type = "text/css" href = "./css/blocos.css">
+    <link href = "fontawesome/css/all.css" rel="stylesheet">
+
+    <title>Adição</title>
+</head>
+<body>
+    <header>
+        <a href = "index.html">
+            <img id = "logo" src= "./imagens/logo-png.png">
+        </a>
+        <div class="search-box">
+            <label for="search-input" class="search-icon"></label>
+            <input class="title" type="text" id="title" placeholder="Pesquisar">
+            <ul id="lista"></ul>
+        </div>
+        <!--Menu-->
+
+    </header>
+    <main>
+        <!--Menu-->
+        <div class="menu-lateral">
+            <input type = "checkbox" id = "check">
+            <label for = "check">
+                <i class = "fas fa-bars" id = "btn-menu"></i>
+                <i class = "fas fa-times" id = "cancel-menu"></i>
+            </label>
+            <div class="sidebar">
+                <div class="header-menu">Menu</div>
+                    <a href="#" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Testeteste</span>
+                    </a>
+                    <a href="#" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Testeteste</span>
+                    </a>
+                    <a href="#" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Testeteste</span>
+                    </a>
+            </div>
+        </div>
+        <h1 class="titulo-principal">Adição</h1>
+
+        <section class="secao-blocos">
+            <div class="bloco">
+                <h1 class="titulo-bloco">Adição - Propriedades e Exemplos:</h1>
+                <ul>
+                    <li><p class="paragrafo">A adição é uma das quatro operações fundamentais da aritmética. Consiste em adicionar dois ou mais números naturais, conhecido como parcelas, que produz em todos os casos um único resultado que chamamos soma ou total. A adição é conhecida popularmente como soma. O ato de somar algo ocorre frequentemente no nosso cotidiano, como, por exemplo, somar o troco que recebemos de uma compra para confirmar se está correto. O sinal indicativo é o sinal mais (+). Este é o operador aritmético da adição. Na adição, os números antes do sinal de igual são chamados parcelas, enquanto o número depois da igualdade é a soma ou o total da adição. Exemplo: 5 + 2 = 7 - O número 5 e 2 no exemplo acima são chamados parcelas, o sinal de mais (+) de adição, e o número 7 de soma ou total.</p></li>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Propriedades da adição:</h1>
+                <ul>
+                    <li><p class="paragrafo">A adição possui algumas propriedades que devemos ficar atento, porém é de fácil entendimento. Veja abaixo:</p></li>
+
+                    <li><p class="paragrafo"><b>Elemento neutro da adição: </b>
+                        Na adição, o zero é considerado neutro, ou seja, não tem efeito na soma. Portanto, o resultado de um número n somado com zero é o próprio número n. <br> <br>
+                        Exemplo: 5 + 0 = 5
+                        </p></li>
+
+                    <li><p class="paragrafo"><b>Comutatividade</b>
+                        Você já deve ter ouvido falar que a ordem das parcelas não altera o resultado da soma. Isso é verdade, veja: <br> <br>
+                        Exemplo: 5 + 2 = 7 e 2 + 5 = 7 <br> <br>
+                        Independente da forma que são somados os números acima, o resultado é o mesmo.</p></li>
+
+                    <li><p class="paragrafo"><b>Associação: </b>
+                        A propriedade associativa da adição nos diz que independente da forma que somarmos as parcelas o resultado é o mesmo.<br> <br>
+                        Exemplo: 5 + (2 + 1) = 8 e (5 + 2) + 1 = 8 <br> <br> Apesar disso, devemos seguir sempre a regra dos parênteses, ou seja, devemos somar primeiro o que está em parênteses, isso evitará problemas com outras operações aritméticas como a multiplicação. <br> Dessa forma, o número 5 acima deve ser somado com o resultado de 2 + 1, e isto terá como resultado o número 8. Alterando os parênteses, no segundo casos temos que somar o resultado de 5 + 2 com 1, produzindo, também, 8 como resultado.</p></li>
+
+                        <li><p class="paragrafo"><b>Fechamento: </b>
+                            O fechamento diz respeito a soma de dois ou mais números reais que tem como resultado um número real.<br> <br>
+                            Exemplo: 2 + 3 = 5 <br> <br> Os números dois, 2, 3 e 5 são números reais. Isso evidencia que qualquer soma de números pertencentes ao conjunto dos números reais terá como resultado um número também pertencente ao conjunto dos reais.</p></li>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Adição com números não naturais:</h1>
+                <ul>
+                    <li><p class="paragrafo">Exemplo: 3,2421 + 2,1 + 4,1 = 9,4421.</p></li>
+                    <li><p class="paragrafo">Quando houver parcelas não inteiras, ou seja, com casas decimais depois da vírgula, deve-se organizá-las, começando pelo número maior, de modo que fique vírgula sobre vírgula. Claramente deve fazer isso quando for resolver a soma manualmente.</p></li>
+                    <li><p class="paragrafo">Exemplo:</p></li>
+                    <img src="./imagens/operadores/conta-nao-naturais.png" >
+                    <li><p class="paragrafo">A vírgula no resultado total, nesse caso, deve ser colocada conforme a parcela com mais casas decimais depois da vírgula. Que nesse caso é 3,2421, com 4 casas decimais após a vírgula.</p></li>
+                    <li><p class="paragrafo">O aluno deve, então, contar da direita para a esquerda e adicionar a vírgula de forma correta.</p></li>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">E o vai um na adição?</h1>
+                <ul>
+                    <li><p class="paragrafo">Quando realizamos uma soma de dois ou mais números manualmente, podemos ter como resultado um valor com dois dígitos. O valor referente a dezena deve ser passado para o próximo número, caso ainda tenha algo a mais para somar. Veja um exemplo:</p></li>
+                    <img src="./imagens/operadores/conta-mais1.png" alt="">
+                    <li><p class="paragrafo">Neste exemplo, ao somarmos 8 com 3 temos 11 como resultado. Dessa forma, colocamos o 1 referente a unidade e o outro 1 referente a dezena será somado ao próximo número.</p></li>
+                    <li><p class="paragrafo">Ou seja, 8 + 3 = 11, colocamos o 1 da unidade e elevamos (vai um) o outro 1 para ser somado com o 2 e 9, e, assim, 1 + 2 + 9 = 12. Como não temos mais nada para somar, não temos mais como elevar e basta colocar o valor total.</p></li>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Adição de números negativos:</h1>
+                <ul>
+                    <li><p class="paragrafo">Ao somar números negativos com negativos ou negativos com positivos devemos ter cuidado com o sinal. Vamos ver um exemplo para fixar:</p></li>
+                    <li><p class="paragrafo">Exemplos de soma de números negativos: <br>
+                        ⦁	(-7) + 8 = 1 <br>
+                        ⦁	(-9) + 2 = (-7) <br>
+                        ⦁	2 + (-3) = -1 <br>
+                        ⦁	(-2) + (-3) = -5 <br>
+                        ⦁	(-5) + 5 = 0
+                        </p></li>
+                    <li><p class="paragrafo">Os parênteses são usados para mostrar que o sinal pertence ao número, assim não haverá confusão com o sinal de mais da adição.</p></li>
+                    <li><p class="paragrafo">Quando somamos números com sinais diferentes (negativos e positivos), devemos colocar no resultado o sinal do maior número. Com ressalva para números iguais e sinais diferentes que o resultado será zero e o zero não leva o sinal.</p></li>
+                    <li><p class="paragrafo">Quando somarmos números com sinais iguais, o sinal é mantido no resultado.</p></li>
+                    <li><p class="paragrafo">Ao somar números negativos, o aluno deve ter em mente a seguinte ideia: se eu devo 2 reais a uma pessoa, e pego emprestado 3 reais a essa mesma pessoa, eu passo a dever-lhe 5 reais.</p></li>
+                    <li><p class="paragrafo">Devemos somar números negativos e positivos com cuidado para não errar. Faça da seguinte maneira: se eu devo 7 reais a uma pessoa é pago para ela 8 reais, agora ela me deve 1 real. Portanto, ela tem que me dar o troco.</p></li>
+                </ul>
+                <p class="link-bloco-p">Referência: <a href="https://matematicabasica.net/adicao/" class="link-bloco">https://matematicabasica.net/adicao/</a></p>
+            </div>
+            
+            <div class="bloco">
+                <h1 class="titulo-bloco">Vídeo Explicativo:</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/e78_5WIssSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="link-bloco-p">Referência: <a href="https://www.youtube.com/watch?v=e78_5WIssSU" class="link-bloco">https://www.youtube.com/watch?v=e78_5WIssSU</a></p>
+            </div>
+            
+        </section>
+        
+        <!--Caculadora-->
+        <div class="calc-bar-collapsible">
+            <button id="calc-btn" type="button" class="collapsible">Calculadora
+                <i id="calc-icon" style="color: #000;" class="fa-solid fa-calculator fa"></i>
+            </button>
+            <div class="content">
+                <div class="full-calc-block">
+                    <div classe = "calc-outer">
+                        <div class="calc-container2">
+                            <form action="" name="Calculator" class = "calculadora-form">
+                                <input type="text" class="text maincolor" name="text1" disabled >
+                                <input type="text" class="text1 maincolor" name="text12" value="C" onclick="location.reload()"><br>        
+                                <input type="button" class="num maincolor" name="btn9" value="9" 
+                                            onclick="displaynum(btn9.value)">
+                                <input type="button" class="num maincolor" name="btn8" value="8" 
+                                            onclick="displaynum(btn8.value)">
+                                <input type="button" class="num maincolor" name="btn7" value="7" 
+                                            onclick="displaynum(btn7.value)">
+                                <input type="button" class="num blu" name="addbtn" value="+" 
+                                            onclick="displaynum(addbtn.value)"><br>
+                                <input type="button" class="num maincolor" name="btn6" value="6" 
+                                            onclick="displaynum(btn6.value)">
+                                <input type="button" class="num maincolor" name="btn5" value="5" 
+                                            onclick="displaynum(btn5.value)">
+                                <input type="button" class="num maincolor" name="btn4" value="4"
+                                            onclick="displaynum(btn4.value)">
+                                <input type="button" class="num pin" name="subbtn" value="-" 
+                                            onclick="displaynum(subbtn.value)"><br>
+                                <input type="button" class="num maincolor" name="btn3" value="3" 
+                                            onclick="displaynum(btn3.value)">
+                                <input type="button" class="num maincolor" name="btn2" value="2" 
+                                            onclick="displaynum(btn2.value)">
+                                <input type="button" class="num maincolor" name="btn1" value="1" 
+                                            onclick="displaynum(btn1.value)">
+                                <input type="button" class="num gre" name="mulbtn" value="*" 
+                                            onclick="displaynum(mulbtn.value)"><br>        
+                                <input type="button" class="num maincolor" name="dotbtn" value="." 
+                                            onclick="displaynum(dotbtn.value)">
+                                <input type="button" class="num maincolor" name="btn0" value="0" 
+                                            onclick="displaynum(btn0.value)">
+                                <input type="button" class="num pur" name="eqlbtn" value="=" 
+                                            onclick="text1.value=eval(text1.value)">
+                                <input type="button" class="num ora" name="divbtn" value="/" 
+                                            onclick="displaynum(divbtn.value)"><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="icons-list">
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-facebook-square fa-2x"></i></a>
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-twitter-square fa-2x"></i></a>
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-instagram-square fa-2x"></i></a>
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" type = "text/css" href = "./css/style.css">
+    <link rel = "stylesheet" type = "text/css" href = "./css/calculdadora.css">
+    <link rel = "stylesheet" type = "text/css" href = "./css/blocos.css">
+    <link rel = "stylesheet" type = "text/css" href = "./css/pitagoras.css">
+    <link href = "fontawesome/css/all.css" rel="stylesheet">
+
+    <title>Pitágoras</title>
+</head>
+<body>
+    <header>
+        <a href = "index.html">
+            <img id = "logo" src= "./imagens/logo-png.png">
+        </a>
+        <div class="search-box">
+            <label for="search-input" class="search-icon"></label>
+            <input class="title" type="text" id="title" placeholder="Pesquisar">
+            <ul id="lista"></ul>
+        </div>
+        <!--Menu-->
+
+    </header>
+    <main>
+        <!--Menu-->
+        <div class="menu-lateral">
+            <input type = "checkbox" id = "check">
+            <label for = "check">
+                <i class = "fas fa-bars" id = "btn-menu"></i>
+                <i class = "fas fa-times" id = "cancel-menu"></i>
+            </label>
+            <div class="sidebar">
+                <div class="header-menu">Menu</div>
+                    <a href="#" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Testeteste</span>
+                    </a>
+                    <a href="#" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Testeteste</span>
+                    </a>
+                    <a href="#" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Testeteste</span>
+                    </a>
+            </div>
+        </div>
+        <h1 class="titulo-principal">Pitágoras</h1>
+
+        <!--Calculadora Pitágoras-->
+        <h1 id="heading"> Calculadora <br> Teorema de Pitagoras</h1>
+    
+        <div id="calc-pit">
+       
+            <img id="triangle" alt="triangle" src="./imagens/trigonometria-triangulo-retangulo.png">
+      
+            <div id="aDesc">
+                <h2>Cateto Adjacente: </h2>
+            </div>
+
+            <div id="bDesc">
+                <h2>Cateto Oposto: </h2>
+            </div>
+
+            <div id="hip">
+                <h2>Valor Hipotenusa: </h2>
+            </div>
+
+            <input placeholder="A" id="aInput">
+ 
+            <input placeholder="B" id="bInput">
+                <div id="result"></div>
+                <button id="button">Calcular</button>
+        </div>
+        
+        <section class="secao-blocos">
+            
+            <div class="bloco">
+                <h1 class="titulo-bloco">Pitágoras:</h1>
+                <ul>
+                    <li><p class="paragrafo">Pitágoras de Samos foi um dos grandes filósofos pré-socráticos e matemáticos da Grécia Antiga.</p></li>
+                    <li><p class="paragrafo">Segundo ele “tudo é número”, frase que indica uma explicação para a realidade e tudo que existe no mundo. A ele foi atribuído o uso e criação dos termos “filósofo” e “matemática”.</p></li>
+                    <img src="./imagens/Pitagoras.jpg" class="img-pitagoras">
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Teorema de Pitágoras:</h1>
+                <ul>
+                    <li><p class="paragrafo">Um dos mais importantes teoremas da geometria é o Teorema de Pitágoras. É representado pela fórmula (c²= a²+b²) sendo seu enunciado descrito da seguinte maneira:</p></li>
+                    <li><p class="paragrafo">“No triângulo retângulo, composto por um ângulo interno de 90° (ângulo reto), a soma dos quadrados de seus catetos corresponde ao quadrado de sua hipotenusa.”</p></li>
+                    <li><p class="paragrafo">Esta fórmula vale para calcular o tamanho dos triângulos retângulos e tem um sem-número de aplicações especialmente nas construções em geral.</p></li>
+                    <p class="link-bloco-p">Referência: <a href="https://www.todamateria.com.br/pitagoras/" class="link-bloco">https://www.todamateria.com.br/pitagoras/</a></p>
+                    <img src="./imagens/trigonometria-triangulo-retangulo.png" class="img-trigonometria">
+                    <li><p class="paragrafo">O Teorema de Pitágoras relaciona o comprimento dos lados do triângulo retângulo. Essa figura geométrica é formada por um ângulo interno de 90°, chamado de ângulo reto.</p></li>
+                    <li><p class="paragrafo">O enunciado desse teorema é: <br> "A soma dos quadrados de seus catetos corresponde ao quadrado de sua hipotenusa."</p></li>
+                    <li><p class="paragrafo">Segundo o enunciado do Teorema de Pitágoras, a fórmula é representada da seguinte maneira: <br>a² + b² = c² <br>Sendo, <br> a = Cateto Adjacente <br>b = Cateto Oposto <br>c = Hipotenusa</p></li>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Triângulo Retângulo:</h1>
+                <ul>
+                    <li><p class="paragrafo">A hipotenusa é o maior lado de um triângulo retângulo e o lado oposto ao ângulo reto. Os outros dois lados são os catetos. O ângulo formado por esses dois lados tem medida igual a 90º (ângulo reto).</p></li>
+                    <li><p class="paragrafo">Identificamos ainda os catetos, de acordo com um ângulo de referência. Ou seja, o cateto poderá ser chamado de cateto adjacente ou cateto oposto.</p></li>
+                    <li><p class="paragrafo">Quando o cateto está junto ao ângulo de referência, é chamado de adjacente, por outro lado, se está contrário a este ângulo, é chamado de oposto.</p></li>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Hipotenusa e cateto oposto:</h1>
+                <ul>
+                    <li><p class="paragrafo">Veja a seguir três exemplos de aplicações do teorema de Pitágoras para as relações métricas de um triângulo retângulo.</p></li>
+                    <li><p class="paragrafo">Exemplo 1: calcular a medida da hipotenusa <br> Se um triângulo retângulo apresenta 3 cm e 4 cm como medidas dos catetos, qual a hipotenusa desse triângulo? <br> reto a ao quadrado espaço igual a espaço reto b ao quadrado espaço mais reto c ao quadrado reto a ao quadrado espaço igual a espaço 4 ao quadrado espaço mais espaço 3 ao quadrado reto a ao quadrado espaço igual a 16 espaço mais espaço 9 reto a ao quadrado espaço igual a 25 reto a espaço igual a espaço raiz quadrada de 25 reto a espaço igual a espaço 5 <br> Portanto, os lados do triângulo retângulo são 3 cm, 4 cm e 5 cm.</p></li>
+                    <li><p class="paragrafo">Exemplo 2: calcular a medida de um dos catetos <br> Determine a medida de um cateto que faz parte de um triângulo retângulo, cuja hipotenusa é 20 cm e o outro cateto mede 16 cm. <br> reto a ao quadrado espaço igual a espaço reto b ao quadrado espaço mais reto c ao quadrado espaço seta dupla para a direita reto b ao quadrado espaço igual a espaço reto a ao quadrado espaço menos espaço reto c ao quadrado reto b ao quadrado espaço igual a espaço 20 ao quadrado espaço menos espaço 16 ao quadrado reto b ao quadrado espaço igual a espaço 400 espaço menos espaço 256 reto b ao quadrado espaço igual a 144 reto b espaço igual a espaço raiz quadrada de 144 reto b espaço igual a espaço 12 <br> Portanto, as medidas dos lados do triângulo retângulo são 12 cm, 16 cm e 20 cm.</p></li>
+                    <li><p class="paragrafo">Exemplo 3: comprovar se um triângulo é retângulo<br> Um triângulo apresenta os lados com medidas 5 cm, 12 cm e 13 cm. Como saber se é um triângulo retângulo?<br> Para provar que um triângulo retângulo é verdadeiro as medidas dos seus lados devem obedecer ao Teorema de Pitágoras. <br> reto a ao quadrado espaço igual a espaço reto b ao quadrado espaço mais espaço reto c ao quadrado 13 ao quadrado espaço igual a espaço 12 ao quadrado espaço mais espaço 5 ao quadrado 169 espaço igual a espaço 144 espaço mais espaço 25 169 espaço igual a 169 <br>Como as medidas dadas satisfazem o teorema de Pitágoras, ou seja, o quadrado da hipotenusa é igual a soma do quadrado dos catetos, então podemos dizer que o triângulo é retângulo.</p></li>
+                    <p class="link-bloco-p">Referência: <a href="https://www.todamateria.com.br/teorema-de-pitagoras/" class="link-bloco">https://www.todamateria.com.br/teorema-de-pitagoras/</a></p>
+                </ul>
+            </div>
+            
+            <div class="bloco">
+                <h1 class="titulo-bloco">Vídeo Explicativo:</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JcX2mtRDtCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="link-bloco-p">Referência: <a href="https://www.youtube.com/watch?v=JcX2mtRDtCc" class="link-bloco">https://www.youtube.com/watch?v=JcX2mtRDtCc</a></p>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Exercícios:</h1>
+                <!--Exercício a-->
+                <div class="exercicios">a) (ENEM). Na figura abaixo, que representa o projeto de uma escada de 5 degraus de mesma altura, o comprimento total do corrimão é igual a: <br>
+                    A)1,8m. <br>
+                    B) 1,9 m. <br>
+                    C) 2,0 m. <br>
+                    D) 2,1 m. <br>
+                    E) 2,2 m. <br>
+
+                </div>
+                <input type="checkbox" id="btn-a">
+
+                <label for= "btn-a" >
+                <p><i class="fa fa-arrow-circle-down"></i><strong> Mostrar Resposta</strong></p>
+                </label>
+
+                <div class="hide">
+                    <p class="resposta">
+                        Observe que a altura entre o primeiro degrau e o corrimão é de 90 cm. Somando o comprimento de cada degrau, obteremos 5 . 24 = 120 cm <br>
+                        Observe que será formado um triângulo retângulo de catetos 90 cm e 120 cm. Podemos aplicar o Teorema de Pitágoras para encontrar a medida do corrimão: <br>
+
+                        a² = b² + c² <br>
+                        a² = 90² + 120² <br>
+                        a² = 8100 + 14400 <br>
+                        a² = 22500 <br>
+                        a = √22500 <br>
+                        a = 150cm <br>
+
+                        Assim, o corrimão terá 150 cm. Mas observe que ainda há dois pedaços do corrimão, ambos de 30 cm, assim, a medida do corrimão será 150 cm + 60 cm = 210 cm. Transformando para metros (dividindo por 100) teremos 2,1 m. <b>Alternativa D.</b>
+                        <p class="link-bloco-p">Referência: <a href="https://www.infoescola.com/matematica/teorema-de-pitagoras/" class="link-bloco">https://www.infoescola.com/matematica/teorema-de-pitagoras/</a></p>
+                </div>
+            </div>
+
+            <div class="bloco">
+                <!--Exercício b-->
+                <div class="exercicios">b) Um terreno retangular será dividido ao meio, pela sua diagonal, formando dois triângulos retângulos. A metade desse terreno será cercada com 4 fios de arame farpado. Sabendo que as dimensões desse terreno são de 20 metros de largura e 21 metros de comprimento, qual será a metragem mínima gasta de arame?<br>
+                    A) 300 metros <br>
+                    B) 280 metros <br>
+                    C) 140 metros <br>
+                    D) 70 metros <br>
+                    E) 29 metros <br>
+                </div>
+                <input type="checkbox" id="btn-b">
+
+                <label for= "btn-b" >
+                <p><i class="fa fa-arrow-circle-down"></i><strong> Mostrar Resposta</strong></p>
+                </label>
+
+                <div class="hide">
+                    <p class="resposta">
+                        R: <b>Alternativa B</b> <br>
+                        Para encontrar a hipotenusa, que é diagonal d desse retângulo, aplicamos o teorema de Pitágoras <br>
+
+                        d² = 20² + 21² <br>
+                        d² = 400 + 441 <br>
+                        d² = 841 <br>
+                        d = √841 <br>
+                        d = 29 <br>
+
+                        Sabendo que as dimensões do triângulo são 20, 21 e 29, vamos calcular seu perímetro. <br>
+                        P = 20 + 21 + 29 = 70 metros <br>
+
+                        Como haverá 4 fios de arame farpado, multiplicando o perímetro por 4, encontraremos a metragem de arame necessária. <br>
+
+                        70 x 4 = 280 metros
+
+                        <p class="link-bloco-p">Referência: <a href="https://exercicios.brasilescola.uol.com.br/exercicios-matematica/exercicios-sobre-teorema-pitagoras.htm" class="link-bloco">https://exercicios.brasilescola.uol.com.br/exercicios-matematica/exercicios-sobre-teorema-pitagoras.htm</a></p>
+                </div>
+            </div>
+
+            <div class="bloco">
+                <!--Exercício c-->
+                <div class="exercicios">c) (IDHTEC) O teorema de Pitágoras tem sido utilizado até hoje e com muita aplicabilidade a diversas situações cotidianas. Por exemplo, se uma escada de 5 m está encostada no topo em uma parede de 4 m, dá para descobrir que o pé dessa escada está afastado 3 m da parede. Imagine agora que essa escada possua 13 m e que o pé dela esteja afastado 5 m da parede. Qual a altura do topo da parede onde a escada está encostada? <br>
+                    a) 12 m <br>
+                    b) 11 m <br>
+                    c) 10 m <br>
+                    d) 9 m <br>
+                    e) 8 m <br>
+                    
+                </div>
+                <input type="checkbox" id="btn-c">
+
+                <label for= "btn-c">
+                <p><i class="fa fa-arrow-circle-down"></i><strong> Mostrar Resposta</strong></p>
+                </label>
+
+                <div class="hide">
+                    <p class="resposta">
+                        R: <b>Alternativa A</b> <br>
+                        Ao encostar a escada na parede, ela forma um triângulo retângulo conforme a imagem a seguir: <br>
+                        Então, aplicando o teorema de Pitágoras, temos que: <br>
+                        13 m → medida da hipotenusa; <br>
+                        5 m e x → medidas dos catetos. <br>
+                        13² = 5² + x² <br>
+                        169 = 25 + x² <br>
+                        169 – 25 = x² <br>
+                        144 = x² <br>
+                        x = √144 <br>
+                        x = 12 <br>
+
+                        <p class="link-bloco-p">Referência: <a href="https://mundoeducacao.uol.com.br/matematica/teorema-de-pitagoras.htm" class="link-bloco">https://mundoeducacao.uol.com.br/matematica/teorema-de-pitagoras.htm</a></p>
+                </div>
+
+            </div>
+            
+        </section>
+        
+        <!--Caculadora-->
+        <div class="calc-bar-collapsible">
+            <button id="calc-btn" type="button" class="collapsible">Calculadora
+                <i id="calc-icon" style="color: #000;" class="fa-solid fa-calculator fa"></i>
+            </button>
+            <div class="content">
+                <div class="full-calc-block">
+                    <div classe = "calc-outer">
+                        <div class="calc-container2">
+                            <form action="" name="Calculator" class = "calculadora-form">
+                                <input type="text" class="text maincolor" name="text1" disabled >
+                                <input type="text" class="text1 maincolor" name="text12" value="C" onclick="location.reload()"><br>        
+                                <input type="button" class="num maincolor" name="btn9" value="9" 
+                                            onclick="displaynum(btn9.value)">
+                                <input type="button" class="num maincolor" name="btn8" value="8" 
+                                            onclick="displaynum(btn8.value)">
+                                <input type="button" class="num maincolor" name="btn7" value="7" 
+                                            onclick="displaynum(btn7.value)">
+                                <input type="button" class="num blu" name="addbtn" value="+" 
+                                            onclick="displaynum(addbtn.value)"><br>
+                                <input type="button" class="num maincolor" name="btn6" value="6" 
+                                            onclick="displaynum(btn6.value)">
+                                <input type="button" class="num maincolor" name="btn5" value="5" 
+                                            onclick="displaynum(btn5.value)">
+                                <input type="button" class="num maincolor" name="btn4" value="4"
+                                            onclick="displaynum(btn4.value)">
+                                <input type="button" class="num pin" name="subbtn" value="-" 
+                                            onclick="displaynum(subbtn.value)"><br>
+                                <input type="button" class="num maincolor" name="btn3" value="3" 
+                                            onclick="displaynum(btn3.value)">
+                                <input type="button" class="num maincolor" name="btn2" value="2" 
+                                            onclick="displaynum(btn2.value)">
+                                <input type="button" class="num maincolor" name="btn1" value="1" 
+                                            onclick="displaynum(btn1.value)">
+                                <input type="button" class="num gre" name="mulbtn" value="*" 
+                                            onclick="displaynum(mulbtn.value)"><br>        
+                                <input type="button" class="num maincolor" name="dotbtn" value="." 
+                                            onclick="displaynum(dotbtn.value)">
+                                <input type="button" class="num maincolor" name="btn0" value="0" 
+                                            onclick="displaynum(btn0.value)">
+                                <input type="button" class="num pur" name="eqlbtn" value="=" 
+                                            onclick="text1.value=eval(text1.value)">
+                                <input type="button" class="num ora" name="divbtn" value="/" 
+                                            onclick="displaynum(divbtn.value)"><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="icons-list">
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-facebook-square fa-2x"></i></a>
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-twitter-square fa-2x"></i></a>
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-instagram-square fa-2x"></i></a>
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/pitagoras.js"></script>
+</body>
+
+</html>

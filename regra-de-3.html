@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" type = "text/css" href = "./css/style.css">
+    <link rel = "stylesheet" type = "text/css" href = "./css/calculdadora.css">
+    <link rel = "stylesheet" type = "text/css" href = "./css/blocos.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+
+    <title>Regra de 3</title>
+</head>
+<body>
+    <header>
+        <a href = "index.html">
+            <img id = "logo" src= "./imagens/logo-png.png">
+        </a>
+        <div class="search-box">
+            <label for="search-input" class="search-icon"></label>
+            <input class="title" type="text" id="title" placeholder="Pesquisar">
+            <ul id="lista"></ul>
+        </div>
+        <!--Menu-->
+
+    </header>
+    <main>
+        <!--Menu-->
+        <div class="menu-lateral">
+            <input type = "checkbox" id = "check">
+            <label for = "check">
+                <i class = "fas fa-bars" id = "btn-menu"></i>
+                <i class = "fas fa-times" id = "cancel-menu"></i>
+            </label>
+            <div class="sidebar">
+                <div class="header-menu">Menu</div>
+                    <a href="#" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Testeteste</span>
+                    </a>
+                    <a href="#" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Testeteste</span>
+                    </a>
+                    <a href="#" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Testeteste</span>
+                    </a>
+            </div>
+        </div>
+        <h1 class="titulo-principal">Regra de 3</h1>
+        
+        <section class="secao-blocos">
+            <div class="bloco">
+                <h1 class="titulo-bloco">Regra de 3 simples:</h1>
+                <ul>
+                    <li><p class="paragrafo">A regra de três é um processo matemático para a resolução de muitos problemas que envolvem duas ou mais grandezas diretamente ou inversamente proporcionais.</p></li>
+                    <li><p class="paragrafo">Nesse sentido, na regra de três simples, é necessário que três valores sejam apresentados, para que assim, descubra o quarto valor.</p></li>
+                    <li><p class="paragrafo">Em outras palavras, a regra de três permite descobrir um valor não identificado, por meio de outros três.</p></li>
+                    <p class="link-bloco-p">Referência: <a href="https://www.todamateria.com.br/regra-de-tres-simples-e-composta/" class="link-bloco">https://www.todamateria.com.br/regra-de-tres-simples-e-composta/</a></p>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <img src="./imagens/regra-de-3-simples.png" class="img-regra-simples">
+                <ul>
+                    <li><p class="paragrafo">A comparação entre duas grandezas é bastante comum e necessária no cotidiano, e quando comparamos e verificamos sua proporção, podemos separá-las em dois casos importantes: grandezas diretamente proporcionais ou grandezas inversamente proporcionais.</p></li>
+                    <li><p class="paragrafo">Diretamente proporcionais: à medida que uma dessas grandezas aumenta, a outra também aumenta e na mesma proporção. Existem várias situações no nosso cotidiano que envolvem grandezas diretamente proporcionais, um exemplo seria a relação preço e peso na compra de uma determinada verdura, quanto menor a quantidade, menor o preço, e quanto maior a quantidade, maior o preço.</p></li>
+                    <li><p class="paragrafo">Inversamente proporcionais: à medida que uma dessas grandezas aumenta, a outra grandeza diminui na mesma proporção. Um exemplo dessa situação no cotidiano é a relação entre velocidade e tempo. Quanto maior a velocidade para percorrer-se determinado percurso, menor será o tempo.</p></li>
+                    <p class="link-bloco-p">Veja mais em: <a href="https://brasilescola.uol.com.br/matematica/regra-tres-simples.htm" class="link-bloco">https://brasilescola.uol.com.br/matematica/regra-tres-simples.htm</a></p>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Como construir:</h1>
+                <ul>
+                    <li><p class="paragrafo">1º) Construir uma tabela, agrupando as grandezas da mesma espécie em colunas e mantendo na mesma linha as grandezas de espécies diferentes em correspondência.</p></li>
+                    <li><p class="paragrafo">2º) Identificar se as grandezas são diretamente ou inversamente proporcionais.</p></li>
+                    <li><p class="paragrafo">3º) Montar a proporção e resolver a equação.</p></li>
+                    <p class="link-bloco-p">Referência: <a href="https://www.somatematica.com.br/fundam/regra3s.php" class="link-bloco">https://www.somatematica.com.br/fundam/regra3s.php</a></p>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Vídeo Explicativo:</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/puGhkbJQcCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="link-bloco-p">Link: <a href="https://youtu.be/puGhkbJQcCg" class="link-bloco">https://youtu.be/puGhkbJQcCg</a></p>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Exercícios:</h1>
+                <!--Exercício a-->
+                <div class="exercicios">
+                    a) Durante um naufrágio, os sobreviventes dividiram a comida que lhes sobrou em partes iguais. Sabendo que a quantidade de comida duraria 9 dias para os 12 náufragos, caso fossem encontrados mais 4 sobreviventes e a comida fosse redistribuída, a quantidade de dias aproximadamente que ela duraria seria de:<br>
+                    A) 2 dias. <br>
+                    B) 4 dias. <br>
+                    C) 5 dias. <br>
+                    D) 6 dias. <br>
+                    E) 8 dias.                
+                </div>
+                <input type="checkbox" id="btn-a">
+
+                <label for= "btn-a" >
+                <p><i class="fa fa-arrow-circle-down"></i><strong> Mostrar Resposta</strong></p>
+                </label>
+
+                <div class="hide">
+                    <p class="resposta">
+                        R: Alternativa D. <br>
+
+                        As grandezas envolvidas são dias e quantidade de náufragos. Se eu aumento a quantidade de náufragos, sabemos que o tempo de duração da comida diminui, logo essas grandezas são inversamente proporcionais. <br>
+
+                        Montando a tabela, temos que: <br>
+
+                        <img src="./imagens/exercicio-regra1.PNG" alt=""> <br>
+
+                        Como as grandezas são inversamente proporcionais, multiplicamos reto: <br>
+                        16x = 12 · 9 <br>
+                        16x = 108 <br>
+                        x = 108 / 16 <br>
+                        x = 6,75 <br>
+                        6 dias <br>
+
+                        <p class="link-bloco-p">Referência: <a href="https://static.mundoeducacao.uol.com.br/exercicios/2021/02/1-q1tabela.jpg" class="link-bloco">https://static.mundoeducacao.uol.com.br/exercicios/2021/02/1-q1tabela.jpg</a></p>
+
+                </div>
+
+                <!--Exercício b-->
+                <div class="exercicios">
+                    b) A chuva, quando em excesso, traz vários problemas para a população. Em uma determinada cidade brasileira, houve a danificação da estrutura de uma ponte. Para arrumá-la, a prefeitura constatou que seriam necessários 12 funcionários para terminar a obra em 2 meses. Sabendo que era ano político e visando à reeleição, o prefeito decidiu que terminaria a obra em 15 dias. A quantidade de funcionários necessários para realizar a obra nesse período é de: <br>
+                    A) 18 <br>
+                    B) 24 <br>
+                    C) 36 <br>
+                    D) 48 <br>
+                    E) 52 <br>
+           
+                </div>
+                <input type="checkbox" id="btn-b">
+
+                <label for= "btn-b" >
+                <p><i class="fa fa-arrow-circle-down"></i><strong> Mostrar Resposta</strong></p>
+                </label>
+
+                <div class="hide">
+                    <p class="resposta">
+                        R: Alternativa D. <br>
+                        As grandezas são tempo e quantidade de funcionários, e, analisando a situação, sabemos que, para diminuir o tempo, a quantidade de funcionários precisa aumentar, logo, essas grandezas são inversamente proporcionais. Quando isso ocorre, construímos a tabela e multiplicamos reto. Como um tempo foi dado em dias, e o outro, em meses, utilizaremos 60 dias para representar os 2 meses. <br>
+
+                        <img src="./imagens/exercicio-regra2.PNG" alt=""> <br>
+
+                        Como as grandezas são inversamente proporcionais, multiplicamos reto: <br>
+                        15x = 12 · 60 <br>
+                        15x = 720 <br>
+                        x= 720 ÷ 15 <br>
+                        x= 48 
+                        
+                        <p class="link-bloco-p">Referência: <a href="https://exercicios.brasilescola.uol.com.br/exercicios-matematica/exercicios-sobre-regra-tres-simples.htm" class="link-bloco">https://exercicios.brasilescola.uol.com.br/exercicios-matematica/exercicios-sobre-regra-tres-simples.htm</a></p>
+                </div>
+
+                <!--Exercício c-->
+                <div class="exercicios">
+                    c) Um senhor pegou emprestado com um amigo uma quantia de R$ 3.000 para quitar uma dívida no banco. Entretanto esse senhor teve um gasto inesperado com seu carro e gastou a quantia de R$ 600. Quantos por cento esse senhor gastou do total?
+                </div>
+                <input type="checkbox" id="btn-c">
+
+                <label for= "btn-c" >
+                <p><i class="fa fa-arrow-circle-down"></i><strong> Mostrar Resposta</strong></p>
+                </label>
+
+                <div class="hide">
+                    <p class="resposta">
+                        R: <br>
+
+                        <img src="./imagens/exercicio-regra3.PNG" alt=""> <br>
+                        3000x = 100 * 600 <br>
+                        3000x = 60000 <br>
+                        x = 60000 / 3000 <br>
+                        x = 20%
+                        
+                        <p class="link-bloco-p">Referência: <a href="https://mundoeducacao.uol.com.br/matematica/regra-tres-simples.htm" class="link-bloco">https://mundoeducacao.uol.com.br/matematica/regra-tres-simples.htm</a></p>
+                </div>
+            </div>
+            
+        </section>
+        
+        <!--Caculadora-->
+        <div class="calc-bar-collapsible">
+            <button id="calc-btn" type="button" class="collapsible">Calculadora
+                <i id="calc-icon" style="color: #000;" class="fa-solid fa-calculator fa"></i>
+            </button>
+            <div class="content">
+                <div class="full-calc-block">
+                    <div classe = "calc-outer">
+                        <div class="calc-container2">
+                            <form action="" name="Calculator" class = "calculadora-form">
+                                <input type="text" class="text maincolor" name="text1" disabled >
+                                <input type="text" class="text1 maincolor" name="text12" value="C" onclick="location.reload()"><br>        
+                                <input type="button" class="num maincolor" name="btn9" value="9" 
+                                            onclick="displaynum(btn9.value)">
+                                <input type="button" class="num maincolor" name="btn8" value="8" 
+                                            onclick="displaynum(btn8.value)">
+                                <input type="button" class="num maincolor" name="btn7" value="7" 
+                                            onclick="displaynum(btn7.value)">
+                                <input type="button" class="num blu" name="addbtn" value="+" 
+                                            onclick="displaynum(addbtn.value)"><br>
+                                <input type="button" class="num maincolor" name="btn6" value="6" 
+                                            onclick="displaynum(btn6.value)">
+                                <input type="button" class="num maincolor" name="btn5" value="5" 
+                                            onclick="displaynum(btn5.value)">
+                                <input type="button" class="num maincolor" name="btn4" value="4"
+                                            onclick="displaynum(btn4.value)">
+                                <input type="button" class="num pin" name="subbtn" value="-" 
+                                            onclick="displaynum(subbtn.value)"><br>
+                                <input type="button" class="num maincolor" name="btn3" value="3" 
+                                            onclick="displaynum(btn3.value)">
+                                <input type="button" class="num maincolor" name="btn2" value="2" 
+                                            onclick="displaynum(btn2.value)">
+                                <input type="button" class="num maincolor" name="btn1" value="1" 
+                                            onclick="displaynum(btn1.value)">
+                                <input type="button" class="num gre" name="mulbtn" value="*" 
+                                            onclick="displaynum(mulbtn.value)"><br>        
+                                <input type="button" class="num maincolor" name="dotbtn" value="." 
+                                            onclick="displaynum(dotbtn.value)">
+                                <input type="button" class="num maincolor" name="btn0" value="0" 
+                                            onclick="displaynum(btn0.value)">
+                                <input type="button" class="num pur" name="eqlbtn" value="=" 
+                                            onclick="text1.value=eval(text1.value)">
+                                <input type="button" class="num ora" name="divbtn" value="/" 
+                                            onclick="displaynum(divbtn.value)"><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="icons-list">
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-facebook-square fa-2x"></i></a>
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-twitter-square fa-2x"></i></a>
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-instagram-square fa-2x"></i></a>
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/bhaskara.js"></script>
+</body>
+
+</html>

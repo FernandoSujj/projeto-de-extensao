@@ -1,2 +1,19 @@
 /*----------------------Index------------------*/
+.div-main{
+    justify-items: center;
+    align-items: center;
+}
+.img-main{
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
 
+.texto-main{
+    position: absolute;
+    margin-top: -30%;
+    margin-left: 47%;
+    font-family: fantasy;
+    font-size: 50px;
+    color: white;
+}

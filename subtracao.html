@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" type = "text/css" href = "./css/style.css">
+    <link rel = "stylesheet" type = "text/css" href = "./css/calculdadora.css">
+    <link rel = "stylesheet" type = "text/css" href = "./css/blocos.css">
+    <link href = "fontawesome/css/all.css" rel="stylesheet">
+
+    <title>Subtração</title>
+</head>
+<body>
+    <header>
+        <a href = "index.html">
+            <img id = "logo" src= "./imagens/logo-png.png">
+        </a>
+        <div class="search-box">
+            <label for="search-input" class="search-icon"></label>
+            <input class="title" type="text" id="title" placeholder="Pesquisar">
+            <ul id="lista"></ul>
+        </div>
+        <!--Menu-->
+
+    </header>
+    <main>
+        <!--Menu-->
+        <div class="menu-lateral">
+            <input type = "checkbox" id = "check">
+            <label for = "check">
+                <i class = "fas fa-bars" id = "btn-menu"></i>
+                <i class = "fas fa-times" id = "cancel-menu"></i>
+            </label>
+            <div class="sidebar">
+                <div class="header-menu">Menu</div>
+                    <a href="#" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Testeteste</span>
+                    </a>
+                    <a href="#" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Testeteste</span>
+                    </a>
+                    <a href="#" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Testeteste</span>
+                    </a>
+            </div>
+        </div>
+        <h1 class="titulo-principal">Subtração</h1>
+
+        <section class="secao-blocos">
+            <div class="bloco">
+                <h1 class="titulo-bloco">Subtração - Regras dos Sinais:</h1>
+                <ul>
+                    <li><p class="paragrafo">A subtração é uma das quatro operações fundamentais da aritmética. Consiste em subtrair dois ou mais números tendo outro número como resultado. O sinal indicativo da subtração é o “sinal de menos” (–). Os números antes do sinal de igual são chamados minuendo e subtraendo. O valor após o sinal de igualdade é chamado de diferença ou resto.</p></li>
+                    <li><p class="paragrafo">Exemplo: 4 – 1 = 3:</p></li>
+                    <li><p class="paragrafo">O número 4 é o minuendo, o 1 é o subtraendo e o 3 a diferença ou resto. Então, como deve ser lido? Assim: quanto teríamos de 4 se tirássemos 1? O resultado é a diferença, ou seja, o resultado após o que tiramos. E a diferença será 3.
+                    Cuidado! Na subtração, trocar a ordem em que os valores são subtraídos tem resultado diferente. Que nesse caso será um valor com sinal trocado.</p></li>
+                    <li><p class="paragrafo">Exemplos: 4 – 1 = 3 e 1 – 4 = -3</p></li>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Propriedades da subtração:</h1>
+                <ul>
+                    <li><p class="paragrafo">Veja as propriedades da subtração que fazem toda a diferença na resolução dos cálculos.</p></li>
+
+                    <li><p class="paragrafo"><b>Fechamento: </b>
+                        A diferença de dois ou mais números reais tem como resultado um número real. Ou seja, se fazermos a diferença entre dois números do conjunto dos números reais, a diferença entre esses números também será um número do conjunto dos reais.
+                        </p></li>
+
+                    <li><p class="paragrafo"><b>Elemento neutro:</b> Não existe elemento neutro na subtração.</p></li>
+
+                    <li><p class="paragrafo"><b>Anulação: </b>
+                        Quando o minuendo for igual ao subtraendo tem como resultado da diferença o 0 (zero).<br> <br>
+                        Exemplos: 4 – 4 = 0</p></li>
+
+                    <li><p class="paragrafo"><b>Módulo de um número: </b>
+                        Para entendermos as operações envolvendo a diferença entre números inteiros com sinais diferentes, devemos entender o que significa o módulo de um número real.<br> <br>
+                        Exemplo:<br> <br> O módulo do número +3 é representado por |+3| e é igual 3. <br>O módulo de |-3| é 3. <br> O módulo de |-1| é 1</p></li>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Regras de operação da subtração:</h1>
+                <ul>
+                    <li><p class="paragrafo">Sinais iguais: soma e conserva o sinal.</p></li>
+                    <li><p class="paragrafo">Sinais diferentes: subtrai e conserva o sinal do maior número (maior módulo).</p></li>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Exemplos de subtração sem parênteses:</h1>
+                <ul>
+                    <li><p class="paragrafo">–10 + 1 = – 9 (Sinais diferentes: faz a diferença e conserva o sinal do maior número);</p></li>
+                    <li><p class="paragrafo">+10 – 1 = + 9 (Sinais diferentes: faz a diferença e conserva o sinal do maior número);</p></li>
+                    <li><p class="paragrafo">–1 – 1 = – 2 (Sinais iguais: soma e conserva o sinal).</p></li>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Exemplos de subtração com parênteses:</h1>
+                <ul>
+                    <li><p class="paragrafo">Nesse caso é preciso entender o jogo dos sinais para eliminar os parênteses.</p></li>
+                    <li><p class="paragrafo">Exemplo: <br>
+                        ⦁	+( – )  =  – <br>
+                        ⦁	–( + )  =  – <br>
+                        ⦁	+( + )  =  + <br>
+                        ⦁	–( – )  =  +
+                        </p></li>
+                    <li><p class="paragrafo">Veja com funciona na prática: <br>
+                        ⦁	( + 4 ) + ( – 2 )  =  + 4  –  2 =  + 2 <br>
+                        ⦁	( – 4 ) – ( + 2 )  =  – 4  –  2 =  – 6 <br>
+                        ⦁	( + 4 ) + ( + 2 )  =  + 4  +  2 =  + 6 <br>
+                        ⦁	( + 4 ) – ( – 2 )  =  +  4  +  2  =  + 6
+                        </p></li>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Métodos para resolver manualmente:</h1>
+                <ul>
+                    <li><p class="paragrafo">Apresentaremos agora dois métodos para não errar o cálculo durante a resolução de contas feitas a mão.</p></li>
+                    <li><p class="paragrafo"> <b>E o empresta 1 da subtração?</b> <br> Quando subtraímos valores de dois ou mais dígitos manualmente na subtração, o valor a ser subtraído (minuendo) pode ser menor que o subtraendo. Dessa forma, deve-se pegar emprestado ao número vizinho. Veja um exemplo:</p></li>
+                    <img src="./imagens/operadores/conta-menos1.png" alt="">
+                    <li><p class="paragrafo">Como não podemos subtrair 3 de 5, neste caso, “pegamos 1 (em verde) emprestado” do 5 que será descontado e vira 4 (em vermelho), assim teremos 13 – 5 = 8. Como o 5 emprestou 1 ele virou 4 (em vermelho), 4 não pode subtrair 5, pois é menor, então pegamos 1 (em verde) emprestado do 3. Agora temos 14 – 5 = 9. O 3 emprestou 1 (em verde) para o 4, virou 2 (em vermelho) e 2 – 2 = 0</p></li>
+                    <li><p class="paragrafo"><b>E o soma 1 da subtração?</b> <br> Existe outra regra que pode ser mais fácil. Ao contrário do empresta 1, somaremos 1 no número de baixo. Vamos resolver esse mesmo exemplo para ficar mais claro.</p></li>
+                    <img src="./imagens/operadores/conta-menos2.png" alt="">
+                    <li><p class="paragrafo">Nesse exemplo, ao contrário de emprestarmos 1 do número vizinho, somaremos 1 no número de baixo.</p></li>
+                    <li><p class="paragrafo">Não podemos subtrair 3 de 5, então colocamos 1 (em verde) normalmente e ele vira 13, 13 – 5 = 8. Feito isso, no número de baixo, à esquerda, somaremos 1, temos 5 e ele vira 6 (em vermelho). Não podemos subtrair 5 por 6, pois é menor. Então, colocamos 1 (em verde), vira 15, e subtraímos 15 – 6 = 9. No número de baixo temos 2, somamos 1 e ele vira 3 (em vermelho). Assim, 3 – 3 = 0.</p></li>
+                    <li><p class="paragrafo">Perceba que encontramos o mesmo resultado da primeira regra. Esse método parece ser mais fácil. Dessa forma, fica ao critério de cada aluno seguir o método desejado.</p></li>
+                </ul>
+                <p class="link-bloco-p">Referência: <a href="https://matematicabasica.net/subtracao/" class="link-bloco">https://matematicabasica.net/subtracao/</a></p>
+            </div>
+            
+            <div class="bloco">
+                <h1 class="titulo-bloco">Vídeo Explicativo:</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/e78_5WIssSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="link-bloco-p">Referência: <a href="https://www.youtube.com/watch?v=e78_5WIssSU" class="link-bloco">https://www.youtube.com/watch?v=e78_5WIssSU</a></p>
+            </div>
+            
+        </section>
+        
+        <!--Caculadora-->
+        <div class="calc-bar-collapsible">
+            <button id="calc-btn" type="button" class="collapsible">Calculadora
+                <i id="calc-icon" style="color: #000;" class="fa-solid fa-calculator fa"></i>
+            </button>
+            <div class="content">
+                <div class="full-calc-block">
+                    <div classe = "calc-outer">
+                        <div class="calc-container2">
+                            <form action="" name="Calculator" class = "calculadora-form">
+                                <input type="text" class="text maincolor" name="text1" disabled >
+                                <input type="text" class="text1 maincolor" name="text12" value="C" onclick="location.reload()"><br>        
+                                <input type="button" class="num maincolor" name="btn9" value="9" 
+                                            onclick="displaynum(btn9.value)">
+                                <input type="button" class="num maincolor" name="btn8" value="8" 
+                                            onclick="displaynum(btn8.value)">
+                                <input type="button" class="num maincolor" name="btn7" value="7" 
+                                            onclick="displaynum(btn7.value)">
+                                <input type="button" class="num blu" name="addbtn" value="+" 
+                                            onclick="displaynum(addbtn.value)"><br>
+                                <input type="button" class="num maincolor" name="btn6" value="6" 
+                                            onclick="displaynum(btn6.value)">
+                                <input type="button" class="num maincolor" name="btn5" value="5" 
+                                            onclick="displaynum(btn5.value)">
+                                <input type="button" class="num maincolor" name="btn4" value="4"
+                                            onclick="displaynum(btn4.value)">
+                                <input type="button" class="num pin" name="subbtn" value="-" 
+                                            onclick="displaynum(subbtn.value)"><br>
+                                <input type="button" class="num maincolor" name="btn3" value="3" 
+                                            onclick="displaynum(btn3.value)">
+                                <input type="button" class="num maincolor" name="btn2" value="2" 
+                                            onclick="displaynum(btn2.value)">
+                                <input type="button" class="num maincolor" name="btn1" value="1" 
+                                            onclick="displaynum(btn1.value)">
+                                <input type="button" class="num gre" name="mulbtn" value="*" 
+                                            onclick="displaynum(mulbtn.value)"><br>        
+                                <input type="button" class="num maincolor" name="dotbtn" value="." 
+                                            onclick="displaynum(dotbtn.value)">
+                                <input type="button" class="num maincolor" name="btn0" value="0" 
+                                            onclick="displaynum(btn0.value)">
+                                <input type="button" class="num pur" name="eqlbtn" value="=" 
+                                            onclick="text1.value=eval(text1.value)">
+                                <input type="button" class="num ora" name="divbtn" value="/" 
+                                            onclick="displaynum(divbtn.value)"><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="icons-list">
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-facebook-square fa-2x"></i></a>
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-twitter-square fa-2x"></i></a>
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-instagram-square fa-2x"></i></a>
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+.secao-blocos{
+    width: 60%;
+    margin-left: 20%;
+    padding: 10px 0px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.titulo-bloco{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 2%;
+    text-align: left;
+    margin: 2%;
+    margin-top: 5%;
+}
+
+.bloco li{
+    color: #173db5;
+    font: 24px sans-serif;
+    margin-top: 2%;
+    text-align: justify;
+}
+
+.paragrafo{
+    text-align: justify;
+    font: 24px sans-serif;
+}
+
+.link-bloco-p{
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.link-bloco{
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #0000FF;
+}
+
+.exercicios{
+  font: 24px sans-serif;
+}
+
+.resposta{
+  font: 24px sans-serif;
+}
+/*--------Imagens------*/
+
+.img-bhaskara{
+    margin-left: 35%;
+}
+
+.img-tabuada{
+    margin-left: 5%;
+}
+
+.img-regra-simples{
+    margin-left: 35%;
+}
+
+.img-pitagoras{
+    margin-left: 35%;
+}
+
+
+/*-----------Botões------------*/
+.hide {
+    display:none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#btn-a:checked ~ .hide {
+    display: block
+}
+
+#btn-a:not(:checked) ~ .hide {
+    display: none;
+}
+
+#btn-b:checked ~ .hide {
+    display: block
+}
+
+#btn-b:not(:checked) ~ .hide {
+    display: none;
+}
+  
+#btn-c:checked ~ .hide {
+  display: block
+}
+
+#btn-c:not(:checked) ~ .hide {
+  display: none;
+}

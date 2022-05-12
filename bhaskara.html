@@ -8,15 +8,25 @@
     <link rel = "stylesheet" type = "text/css" href = "./css/style.css">
     <link rel = "stylesheet" type = "text/css" href = "./css/bhaskara.css">
     <link rel = "stylesheet" type = "text/css" href = "./css/calculdadora.css">
+    <link rel = "stylesheet" type = "text/css" href = "./css/blocos.css">
     <link href="fontawesome/css/all.css" rel="stylesheet">
 
     <title>Bhaskara</title>
 </head>
 <body>
-    <header id = "header">
+    <header>
         <a href = "index.html">
             <img id = "logo" src= "./imagens/logo-png.png">
         </a>
+        <div class="search-box">
+            <label for="search-input" class="search-icon"></label>
+            <input class="title" type="text" id="title" placeholder="Pesquisar">
+            <ul id="lista"></ul>
+        </div>
+        <!--Menu-->
+
+    </header>
+    <main>
         <!--Menu-->
         <div class="menu-lateral">
             <input type = "checkbox" id = "check">
@@ -26,12 +36,6 @@
             </label>
             <div class="sidebar">
                 <div class="header-menu">Menu</div>
-                    <div class="search-box">
-                        <input type="text" class="search-txt" placeholder="Pesquisar">
-                        <a href="#" class="search-btn">
-                            <img src="loupe.svg.png" alt="Lupa" height="20" width="20">
-                        </a>
-                    </div>
                     <a href="#" class="active" id="a-menu">
                         <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
                         <span>Testeteste</span>
@@ -46,36 +50,115 @@
                     </a>
             </div>
         </div>
-    </header>
-    <main>
+        <h1 class="titulo-principal">Bhaskara</h1>
+        <!--Calculadora de 2 Grau-->
         <section class="calc-bhaskara">
             <h1>Fórmula do 2 Grau</h1>
             <form class="formbhaskara" id="form">
                 <label for="a">
                 Coloque o valor de a:
-                <input name="a" id="a" placeholder="a" type="number" />
-            </label>
-            <label for="kilos">
+                    <input name="a" id="a" placeholder="a" type="number" />
+                </label>
+                <label for="kilos">
                 Coloque o valor de b:
-                <input name="b" id="b" placeholder="b" type="number" />
-            </label>
-            <label for="altura">
+                    <input name="b" id="b" placeholder="b" type="number" />
+                </label>
+                <label for="altura">
                 Coloque o valor de c:
-                <input name="c" id="c" placeholder="c" type="number" />
-            </label>
-            <div class="result">
-                <label for="x1">
-                x1
-                <input disabled="disabled" name="x1" id="x1" />
-              </label>
-              <label for="x2">
-                x2
-                <input disabled="disabled" name="x2" id="x2" />
-              </label>
-            </div>
+                    <input name="c" id="c" placeholder="c" type="number" />
+                </label>
+                <div class="result">
+                    <label for="x1">
+                    x1
+                    <input disabled="disabled" name="x1" id="x1" />
+                    </label>
+                    <label for="x2">
+                    x2
+                    <input disabled="disabled" name="x2" id="x2" />
+                    </label>
+                </div>
             <button>Calcular</button>
             </form>
-            </section>
+        </section>
+        
+        <section class="secao-blocos">
+            
+            <div class="bloco">
+                <h1 class="titulo-bloco">História:</h1>
+                <ul>
+                    <li><p class="paragrafo">O nome Fórmula de Bhaskara surgiu para fazer uma homenagem ao indiano
+                        Bhaskara Akaria, que foi um matemático, professor, astrólogo e astrônomo,
+                        considerado o mais importante matemático do século XII.</p></li>
+                    <li><p class="paragrafo">A fórmula de Bhaskara é usada, para resolver qualquer problema que de equações
+                        quadráticas. É através desta fórmula que podemos deduzir uma expressão para a
+                        soma e o produto das raízes da equação do 2º grau.</p></li>
+                    <p class="link-bloco-p">Referência: <a href="https://www.estudopratico.com.br/formula-de-bhaskara-origem-importancia-e-exemplos/" class="link-bloco">https://www.estudopratico.com.br/formula-de-bhaskara-origem-importancia-e-exemplos/</a>
+                        <img src="./imagens/Bhaskara-1.jpg" class="img-bhaskara"></p>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Equação do 2° Grau:</h1>
+                <ul>
+                    <li><p class="paragrafo">ax2 + bx + c = 0</p></li>
+                </ul>
+                <h1 class="titulo-bloco">Fórmulas de Bhaskara: </h1>
+                <img src="./imagens/formulabhaskara.png" alt="">
+                <ul>
+                    <li><p class="paragrafo">e Δ = b² - 4ac</p></li>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Vídeo Explicativo:</h1>
+                <iframe width="600" height="335" src="https://www.youtube.com/embed/LNLvMo1PWok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="link-bloco-p">Link: <a href="https://youtu.be/LNLvMo1PWok" class="link-bloco">https://youtu.be/LNLvMo1PWok</a></p>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Exercícios:</h1>
+                <!--Exercício a-->
+                <div class="exercicios">a) 3x² -15x + 12 = 0</div>
+                <input type="checkbox" id="btn-a">
+
+                <label for= "btn-a" >
+                <p><i class="fa fa-arrow-circle-down"></i><strong> Mostrar Resposta</strong></p>
+                </label>
+
+                <div class="hide">
+                    <p class="resposta">a = 3; b = - 15 e c = 12<p>
+                    <img src="./imagens/exercicio-bhaskara1.png" alt="">
+                    <p class="resposta">S = {1, 4}</p>
+                </div>
+                <!--Exercício b-->
+                <div class="exercicios">b) 9x² -24x + 16 = 0</div>
+                <input type="checkbox" id="btn-b">
+                <label for= "btn-b" >
+                <p><i class="fa fa-arrow-circle-down"></i><strong> Mostrar Resposta</strong></p>
+                </label>
+
+                <div class="hide">
+                    <p class="resposta">a = 9; b = - 24 e c = 16<p>
+                    <img src="./imagens/exercicio-bhaskara2.png" alt="">
+                </div>
+                <!--Exercício c-->
+                <div class="exercicios">c) x² -2x + 4 = 0</div>
+                <input type="checkbox" id="btn-c">
+                <label for= "btn-c" >
+                <p><i class="fa fa-arrow-circle-down"></i><strong> Mostrar Resposta</strong></p>
+                </label>
+
+                <div class="hide">
+                    <p class="resposta">a = 1; b = - 2 e c = 4<p>
+                    <img src="./imagens/exercicio-bhaskara3.png" alt="">
+                    <p class="resposta">Como o Δ é negativo, logo não temos raízes reais.</p>
+                </div>
+
+                <p class="link-bloco-p">Referência: <a href="https://descomplica.com.br/artigo/formula-de-bhaskara-exercicios-e-exemplos/KvB/" class="link-bloco">https://descomplica.com.br/artigo/formula-de-bhaskara-exercicios-e-exemplos/KvB/</a></p>
+                
+            </div>
+            
+        </section>
         
         <!--Caculadora-->
         <div class="calc-bar-collapsible">
@@ -129,8 +212,6 @@
         </div>
         
     </main>
-        <script src="./js/script.js"></script>
-        <script src="./js/bhaskara.js"></script>
     <footer>
         <div class="icons-list">
             <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-facebook-square fa-2x"></i></a>
@@ -139,6 +220,8 @@
             <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-linkedin fa-2x"></i></a>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/bhaskara.js"></script>
 </body>
 
 </html>

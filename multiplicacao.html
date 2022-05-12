@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" type = "text/css" href = "./css/style.css">
+    <link rel = "stylesheet" type = "text/css" href = "./css/calculdadora.css">
+    <link rel = "stylesheet" type = "text/css" href = "./css/blocos.css">
+    <link href = "fontawesome/css/all.css" rel="stylesheet">
+
+    <title>Multiplicação</title>
+</head>
+<body>
+    <header>
+        <a href = "index.html">
+            <img id = "logo" src= "./imagens/logo-png.png">
+        </a>
+        <div class="search-box">
+            <label for="search-input" class="search-icon"></label>
+            <input class="title" type="text" id="title" placeholder="Pesquisar">
+            <ul id="lista"></ul>
+        </div>
+        <!--Menu-->
+
+    </header>
+    <main>
+        <!--Menu-->
+        <div class="menu-lateral">
+            <input type = "checkbox" id = "check">
+            <label for = "check">
+                <i class = "fas fa-bars" id = "btn-menu"></i>
+                <i class = "fas fa-times" id = "cancel-menu"></i>
+            </label>
+            <div class="sidebar">
+                <div class="header-menu">Menu</div>
+                    <a href="#" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Testeteste</span>
+                    </a>
+                    <a href="#" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Testeteste</span>
+                    </a>
+                    <a href="#" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Testeteste</span>
+                    </a>
+            </div>
+        </div>
+        <h1 class="titulo-principal">Multiplicação</h1>
+
+        <section class="secao-blocos">
+            <div class="bloco">
+                <h1 class="titulo-bloco">Multiplicação - Propriedades e Exemplos:</h1>
+                <ul>
+                    <li><p class="paragrafo">Multiplicação é uma das quatro operações básicas da aritmética. Consiste em uma adição sucessiva de um mesmo número produzindo um resultado que chamamos de produto.</p></li>
+                    <li><p class="paragrafo">O símbolo da multiplicação pode variar, no entanto tem o mesmo sentido: *, x ou . (ponto).</p></li>
+                    <li><p class="paragrafo">São formas de representar a multiplicação e você pode encontrá-las por aí. Dessa forma, quando encontrar uma representação da multiplicação assim já sabe do que se trata.</p></li>
+                    <li><p class="paragrafo">Na matemática, muitas vezes utiliza-se o x para representar a multiplicação, mas, para não confundir com uma variável, é frequentemente substituído pelo (.) ponto.</p></li>
+                    <li><p class="paragrafo">Numa operação utilizando a multiplicação, o multiplicador e o multiplicando são chamados de fatores, e o resultado é o produto resultante da multiplicação.</p></li>
+                    <li><p class="paragrafo">Exemplos: 10 x 2 = 20 ou 40 x 3 = 120 ou 2 . 1 = 2</p></li>
+                    <li><p class="paragrafo">Os números antes do sinal de igual são os fatores, e o valor após o sinal de igual é o produto.</p></li>
+                    <li><p class="paragrafo">Você provavelmente já deve ter ouvido por aí que a ordem dos fatores não altera o produto. Isso é verdade, veja: <br>Exemplos: 2 x 3 = 6 ou 3 x 2 = 6 </p></li>
+                    <li><p class="paragrafo">A multiplicação nada mais é do que uma soma sucessiva de um dos fatores. A quantidade de vezes que tal fator será somado é definido pelo outro fator da operação. <br> Ou seja: x . y = y + y + … + y, x vezes. A quantidade de vezes que somaremos y será definido pelo número x. <br> No exemplo acima poderíamos escrever: 3 + 3 = 6 ou 2 + 2 + 2 = 6</p></li>
+                    <li><p class="paragrafo">A figura abaixo mostra o exemplo acima representado pelos círculos vermelhos. Poderíamos somar os círculos um a um. Mas, como agora sabemos multiplicar, basta multiplicar a quantidade de linhas pelas colunas.</p></li>
+                    <img src="./imagens/operadores/conta-multiplicacao1.png">
+                    <li><p class="paragrafo">Podemos ver pela figura que poderias somar todas os círculos vermelhos, mas basta multiplicar a quantidade de linhas por colunas que teremos o resultado sem precisar contar uma por uma.</p></li>
+                    <li><p class="paragrafo">Exemplo: 2 x 3 = 6 (leia-se: 2 vezes 3 igual a 6)</p></li>
+                    <li><p class="paragrafo">No exemplo acima, o número 2 será somado 3 vezes. Veja: <br> Exemplo: 2 x 3 = 2 + 2 + 2 = 6</p></li>
+                    <li><p class="paragrafo">Você pode estar pensando: “Contar a quantidade de bolas círculos é mais rápido!”. Bom, neste caso, sim. Agora imagine se tivéssemos 1000 círculos vermelhos.</p></li>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Propriedades da multiplicação:</h1>
+                <ul>
+                    <li><p class="paragrafo">A seguir apresentaremos algumas das propriedades da multiplicação. É importante prestar bastante atenção, pois algumas das propriedades são importantes para não errar o cálculo.</p></li>
+
+                    <li><p class="paragrafo"><b>Comutatividade: </b>
+                        A ordem dos fatores não altera o valor do produto. <br> <br> Exemplos: 3 x 5 = 15 ou 5 x 3 = 15 <br> <br> Independente da forma que se faz a multiplicação dos fatores, o resultado é o mesmo.
+                        </p></li>
+
+                    <li><p class="paragrafo"><b>Associatividade:</b> Quando multiplicamos três fatores não importa se eles foram agrupados ou não, o resultado é o mesmo. <br> <br> Exemplos: (3 x 5) x 2 = 30 ou 3 x (5 x 2) = 30 <br> <br> No exemplo acima, os parênteses são agrupamentos dos fatores. Percebemos que o resultado é o mesmo. Não importa a ordem como são multiplicados.</p></li>
+
+                    <li><p class="paragrafo"><b>Distributividade: </b>
+                        Quando multiplicamos um valor por uma soma, o resultado é a soma do produto desse valor com as parcelas da soma.<br> <br> Exemplo: 3 x (2 + 3) = (3 x 2) + (3 x 3) = 6 + 9 = 15 <br> <br> Nesse caso, não deve ser resolvido o que está nos parênteses primeiro. Na multiplicação dizemos que o número que está multiplicando o que está nos parênteses, está em evidência. <br> <br> Assim, pegamos o que está em evidência e multiplicamos por cada valor dentro dos parênteses e depois disso utilizamos o sinal de dentro dos parênteses para realizar a operação com os produtos dessa multiplicação, que nesse caso é uma soma. Isso é o que se chama de distributividade. <br> <br> Veja na imagem abaixo como fazer, siga a indicação das setas vermelhas:</p>
+                        <img src="./imagens/operadores/conta-multiplicacao2.png">
+                        <p class="paragrafo">O que fizemos foi pegar o 3 e multiplicar por cada fator de dentro dos parênteses e depois somar, pois, temos uma soma dentro dos parênteses. Poderia ser uma subtração.</p>
+                    </li>
+
+                    <li><p class="paragrafo"><b>Elemento neutro: </b>
+                        Na multiplicação o número 1 (um) é o elemento neutro, ou seja, qualquer valor multiplicado por 1 (um) é o próprio valor.<br> <br>
+                        Exemplo: 2 x 1 = 2</p></li>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Fechamento:</h1>
+                <ul>
+                    <li><p class="paragrafo">O produto de dois ou mais números reais tem como resultado um número real. Isto é, ao multiplicarmos um número do conjunto dos números reais por outro número real, teremos como resultado também um número real.</p></li>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Anulação:</h1>
+                <ul>
+                    <li><p class="paragrafo">O número 0 (zero) anula qualquer produto. <br> <br> Exemplos: 2 x 3 x 6 x 0 = 0 ou 10 x 0 = 0</p></li>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Ordem de multiplicação dos fatores:</h1>
+                <ul>
+                    <li><p class="paragrafo">A ordem que deve ser multiplicado os fatores é da esquerda para a direita para números inteiros, ou seja, número sem casas decimais. <br> <br> Quando houver números decimais, ou seja, números com vírgula, deve -se começar a multiplicar da direita para a esquerda (quando resolver manualmente). Por fim, contamos a quantidade de casas decimais após a vírgula para colocar corretamente a vírgula no resultado. <br> <br> Exemplo: 5 x 3,125 = 15,625 <br> <br>Multiplicamos o 5 por todos os números da direita para a esquerda e depois contamos a quantidade de casas após a vírgula e colocamos no resultado final. <br> <br>Essa mesma ideia serve para resolver manualmente uma multiplicação por números muito grandes. <br> <br> Exemplo: 5 x 1200 = 6000 <br> <br>Começamos multiplicando o 5 da direta para a esquerda. Assim: <br> ⦁	5 x 0 = 0;
+                        ⦁	5 x 0 = 0; <br>
+                        ⦁	5 x 2 = 10 (colocar o 0 (zero) e eleva o 1); <br>
+                        ⦁	5 x 1 + 1 = 6. <br>
+                        Temos como resultado 6000. Ficou confuso? Veja a imagem abaixo:
+                        </p>
+                        <img src="./imagens/operadores/conta-multiplicacao3.png">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h1 class="titulo-bloco">Como multiplicar números com casas decimais manualmente?</h1>
+                <ul>
+                    <li><p class="paragrafo">Esse é um passo importante. Nem sempre vamos ter uma calculadora por perto e devemos fazer tudo na mão. Veja na imagem abaixo como fazer:</p></li>
+                    <img src="./imagens/operadores/conta-multiplicacao4.png">
+                    <p class="paragrafo">No exemplo, 5 indica quantas vezes vamos somar 3,125. Ou seja, 5 x 3,125 = 3,125 + 3,125 + 3,125 + 3,125 + 3,125 = 15,625.</p>
+                    <p class="paragrafo">Assim, para multiplicar manualmente colocamos 3,125 e o número 5 abaixo do último número da direita para a esquerda que nesse caso é o 5. O x indica que estamos fazendo uma multiplicação.</p>
+                    <p class="paragrafo">As setas vermelhas indicam como devemos seguir multiplicando, da direita para a esquerda. Os números acima de 2 e 1 é o mesmo processo que explicamos na adição.</p>
+                    <p class="paragrafo">Quando multiplicamos 5 por 5, resulta em 25, não podemos colocar o valor inteiro. Então, colocamos o valor relativo à unidade (5) e elevamos a dezena (2).</p>
+                    <p class="paragrafo">Quando multiplicamos o próximo número, devemos somar esse valor elevado. Por exemplo, quando multiplicamos 5 por 2 temos como resultado o número 10, mas nesse caso foi adicionado o número 2, resultado da operação anterior.</p>
+                </ul>
+                <p class="link-bloco-p">Referência: <a href="https://matematicabasica.net/multiplicacao/" class="link-bloco">https://matematicabasica.net/multiplicacao/</a></p>
+            </div>
+            
+            <div class="bloco">
+                <h1 class="titulo-bloco">Vídeo Explicativo:</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0UGJRHq2PS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="link-bloco-p">Referência: <a href="https://www.youtube.com/watch?v=0UGJRHq2PS4" class="link-bloco">https://www.youtube.com/watch?v=0UGJRHq2PS4</a></p>
+            </div>
+            
+        </section>
+        
+        <!--Caculadora-->
+        <div class="calc-bar-collapsible">
+            <button id="calc-btn" type="button" class="collapsible">Calculadora
+                <i id="calc-icon" style="color: #000;" class="fa-solid fa-calculator fa"></i>
+            </button>
+            <div class="content">
+                <div class="full-calc-block">
+                    <div classe = "calc-outer">
+                        <div class="calc-container2">
+                            <form action="" name="Calculator" class = "calculadora-form">
+                                <input type="text" class="text maincolor" name="text1" disabled >
+                                <input type="text" class="text1 maincolor" name="text12" value="C" onclick="location.reload()"><br>        
+                                <input type="button" class="num maincolor" name="btn9" value="9" 
+                                            onclick="displaynum(btn9.value)">
+                                <input type="button" class="num maincolor" name="btn8" value="8" 
+                                            onclick="displaynum(btn8.value)">
+                                <input type="button" class="num maincolor" name="btn7" value="7" 
+                                            onclick="displaynum(btn7.value)">
+                                <input type="button" class="num blu" name="addbtn" value="+" 
+                                            onclick="displaynum(addbtn.value)"><br>
+                                <input type="button" class="num maincolor" name="btn6" value="6" 
+                                            onclick="displaynum(btn6.value)">
+                                <input type="button" class="num maincolor" name="btn5" value="5" 
+                                            onclick="displaynum(btn5.value)">
+                                <input type="button" class="num maincolor" name="btn4" value="4"
+                                            onclick="displaynum(btn4.value)">
+                                <input type="button" class="num pin" name="subbtn" value="-" 
+                                            onclick="displaynum(subbtn.value)"><br>
+                                <input type="button" class="num maincolor" name="btn3" value="3" 
+                                            onclick="displaynum(btn3.value)">
+                                <input type="button" class="num maincolor" name="btn2" value="2" 
+                                            onclick="displaynum(btn2.value)">
+                                <input type="button" class="num maincolor" name="btn1" value="1" 
+                                            onclick="displaynum(btn1.value)">
+                                <input type="button" class="num gre" name="mulbtn" value="*" 
+                                            onclick="displaynum(mulbtn.value)"><br>        
+                                <input type="button" class="num maincolor" name="dotbtn" value="." 
+                                            onclick="displaynum(dotbtn.value)">
+                                <input type="button" class="num maincolor" name="btn0" value="0" 
+                                            onclick="displaynum(btn0.value)">
+                                <input type="button" class="num pur" name="eqlbtn" value="=" 
+                                            onclick="text1.value=eval(text1.value)">
+                                <input type="button" class="num ora" name="divbtn" value="/" 
+                                            onclick="displaynum(divbtn.value)"><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="icons-list">
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-facebook-square fa-2x"></i></a>
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-twitter-square fa-2x"></i></a>
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-instagram-square fa-2x"></i></a>
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

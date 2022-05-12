@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" type = "text/css" href = "./css/style.css">
+    <link rel = "stylesheet" type = "text/css" href = "./css/calculdadora.css">
+    <link rel = "stylesheet" type = "text/css" href = "./css/blocos.css">
+    <link rel = "stylesheet" type = "text/css" href = "./css/cards.css">
+    <link href = "fontawesome/css/all.css" rel="stylesheet">
+
+    <title>Aritmética</title>
+</head>
+<body>
+    <header>
+        <a href = "index.html">
+            <img id = "logo" src= "./imagens/logo-png.png">
+        </a>
+        <div class="search-box">
+            <label for="search-input" class="search-icon"></label>
+            <input class="title" type="text" id="title" placeholder="Pesquisar">
+            <ul id="lista"></ul>
+        </div>
+        <!--Menu-->
+
+    </header>
+    <main>
+        <!--Menu-->
+        <div class="menu-lateral">
+            <input type = "checkbox" id = "check">
+            <label for = "check">
+                <i class = "fas fa-bars" id = "btn-menu"></i>
+                <i class = "fas fa-times" id = "cancel-menu"></i>
+            </label>
+            <div class="sidebar">
+                <div class="header-menu">Menu</div>
+                    <a href="#" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Testeteste</span>
+                    </a>
+                    <a href="#" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Testeteste</span>
+                    </a>
+                    <a href="#" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Testeteste</span>
+                    </a>
+            </div>
+        </div>
+        <h1 class="titulo-principal">Matemática Básica</h1>
+        
+        <section class="secao-blocos">
+            
+            <div class="bloco">
+                <h1 class="titulo-bloco">Aritmética:</h1>
+                <ul>
+                    <li><p class="paragrafo">Deriva do grego arithmos, que significa número. Hoje, sabemos que a palavra aritmética está relacionada à parte da matemática que estuda as operações numéricas, como soma, subtração, multiplicação e divisão. Porém, ao longo do tempo, a etimologia da palavra aritmética sofreu algumas interpretações equivocadas.</p></li>
+                    <li><p class="paragrafo">Na Idade Média, por exemplo, surgiu um "r" extra, como se estivesse relacionada com "métrica". Em 1116, o estudioso Platão de Tivoli, em sua tradução de Abraham Savasorda, utiliza "Boetius in arismetricis". Passados 24 anos, em 1140, o tradutor Johannes Hispalensis apresenta um trabalho com o título "Arismetrica". Cinquenta anos depois, encontramos Fibonacci usando a forma "Rismetirca". O "r" extra geralmente estava presente na literatura italiana, mas quando passou para a Alemanha e posteriormente para a França, começou a desaparecer.</p></li>
+                    <li><p class="paragrafo">Ocorreram também outras variações na ortografia da palavra aritmética, porém menos significativas, pois refletiam apenas questões de pronúncia. Já em língua inglesa, os primeiros registros de uso da palavra aritmética datam do século XIII (mais especificamente, entre 1200 e 1250).</p></li>
+                </ul>
+                <p class="link-bloco-p">Referência: <a href="https://www.somatematica.com.br/historia/palavra_aritmetica.php" class="link-bloco">https://www.somatematica.com.br/historia/palavra_aritmetica.php</a></p>
+            </div>
+        </section>
+
+        <h1 class="titulo-principal">Operadores Aritméticos</h1>
+
+        <section class="lista-cards" id="lista-parques">
+            <!--Card1-->
+            <div class="item-lista"> 
+                <div class="card">
+                    <img src="./imagens/operadores/mais.png" width="200px" height="180px">
+                    <div class="card-content">
+                        <p class="titulo-bloco2">Adição</p>
+                        <p class="card-text">A adição é uma das quatro operações fundamentais da aritmética. Consiste em adicionar dois ou mais números.</p>
+                        
+                        <a href="adicao.html">
+                            <input type="button" class="card-btn" value="Saiba mais">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card2-->
+            <div class="item-lista"> 
+                <div class="card">
+                    <img src="./imagens/operadores/menos.png" width="200px" height="180px">
+                    <div class="card-content">
+                        <p class="titulo-bloco2">Subtração</p>
+                        <p class="card-text">A subtração é uma das quatro operações fundamentais da aritmética. Consiste em subtrair dois ou mais números tendo outro número como resultado. </p>
+                        
+                        <a href="sabesp-mooca.html">
+                            <input type="button" class="card-btn" value="Saiba mais">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card3-->
+            <div class="item-lista"> 
+                <div class="card">
+                    <img src="./imagens/operadores/multiplicacao.png" width="200px" height="180px">
+                    <div class="card-content">
+                        <p class="titulo-bloco2">Multiplicação</p>
+                        <p class="card-text">Multiplicação é uma das quatro operações básicas da aritmética. Consiste em uma adição sucessiva de um mesmo número produzindo um resultado que chamamos de produto.</p>
+                        
+                        <a href="sabesp-mooca.html">
+                            <input type="button" class="card-btn" value="Saiba mais">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card4-->
+            <div class="item-lista"> 
+                <div class="card">
+                    <img src="./imagens/operadores/divisao.png" width="200px" height="180px">
+                    <div class="card-content">
+                        <p class="titulo-bloco2">Divisão</p>
+                        <p class="card-text">A divisão é uma das quatro operações fundamentais da aritmética. Consiste em dividir dois números, o dividendo e o divisor, que produz dois resultados chamados quociente e resto.</p>
+                        
+                        <a href="sabesp-mooca.html">
+                            <input type="button" class="card-btn" value="Saiba mais">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--Caculadora-->
+        <div class="calc-bar-collapsible">
+            <button id="calc-btn" type="button" class="collapsible">Calculadora
+                <i id="calc-icon" style="color: #000;" class="fa-solid fa-calculator fa"></i>
+            </button>
+            <div class="content">
+                <div class="full-calc-block">
+                    <div classe = "calc-outer">
+                        <div class="calc-container2">
+                            <form action="" name="Calculator" class = "calculadora-form">
+                                <input type="text" class="text maincolor" name="text1" disabled >
+                                <input type="text" class="text1 maincolor" name="text12" value="C" onclick="location.reload()"><br>        
+                                <input type="button" class="num maincolor" name="btn9" value="9" 
+                                            onclick="displaynum(btn9.value)">
+                                <input type="button" class="num maincolor" name="btn8" value="8" 
+                                            onclick="displaynum(btn8.value)">
+                                <input type="button" class="num maincolor" name="btn7" value="7" 
+                                            onclick="displaynum(btn7.value)">
+                                <input type="button" class="num blu" name="addbtn" value="+" 
+                                            onclick="displaynum(addbtn.value)"><br>
+                                <input type="button" class="num maincolor" name="btn6" value="6" 
+                                            onclick="displaynum(btn6.value)">
+                                <input type="button" class="num maincolor" name="btn5" value="5" 
+                                            onclick="displaynum(btn5.value)">
+                                <input type="button" class="num maincolor" name="btn4" value="4"
+                                            onclick="displaynum(btn4.value)">
+                                <input type="button" class="num pin" name="subbtn" value="-" 
+                                            onclick="displaynum(subbtn.value)"><br>
+                                <input type="button" class="num maincolor" name="btn3" value="3" 
+                                            onclick="displaynum(btn3.value)">
+                                <input type="button" class="num maincolor" name="btn2" value="2" 
+                                            onclick="displaynum(btn2.value)">
+                                <input type="button" class="num maincolor" name="btn1" value="1" 
+                                            onclick="displaynum(btn1.value)">
+                                <input type="button" class="num gre" name="mulbtn" value="*" 
+                                            onclick="displaynum(mulbtn.value)"><br>        
+                                <input type="button" class="num maincolor" name="dotbtn" value="." 
+                                            onclick="displaynum(dotbtn.value)">
+                                <input type="button" class="num maincolor" name="btn0" value="0" 
+                                            onclick="displaynum(btn0.value)">
+                                <input type="button" class="num pur" name="eqlbtn" value="=" 
+                                            onclick="text1.value=eval(text1.value)">
+                                <input type="button" class="num ora" name="divbtn" value="/" 
+                                            onclick="displaynum(divbtn.value)"><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="icons-list">
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-facebook-square fa-2x"></i></a>
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-twitter-square fa-2x"></i></a>
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-instagram-square fa-2x"></i></a>
+            <a class="icon" id="txt-white" href="#"><i id="icon-id" class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+#calc-pit{
+    position: relative;
+}
+
+#triangle{
+    width:550px;
+    display:flex;
+    align-self:center;
+    margin:auto;
+}
+
+input::placeholder{
+    text-align:center;
+    font-weight:bold;
+    color:black;
+}
+
+input{
+    width:40px;
+}
+
+#aDesc{
+    width: auto;
+    position: relative;
+    margin-left: 50%;
+    top: 50px;
+}
+
+#bDesc{
+    width: auto;
+    position: relative;
+    margin-left: 50%;
+    top:50px;
+}
+
+#hip{
+    width: auto;
+    position: relative;
+    margin-left: 50%;
+    top:50px;
+}
+
+#aInput{
+    position: relative;
+    margin-left:890px;
+    bottom: 60px;
+}
+
+#bInput{
+    position: relative;
+    margin-left: 890px;
+    bottom:40px;
+}
+
+
+#button{
+    position: relative;
+    width:70px;
+    margin-left:640px;
+    top: 30px;
+}
+
+#result{
+    position: relative;
+    width: 46px;
+    background-color:white;
+    text-align: center;
+    font-weight:bold;
+    font-family:sans-serif;
+    margin-left:890px;
+    bottom: 25px;
+    border: solid 1px black;
+}
+
+#heading{
+    text-align:center;
+}
