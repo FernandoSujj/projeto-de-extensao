@@ -58,6 +58,13 @@ input{
     width:70px;
     margin-left:640px;
     top: 30px;
+    background: rgb(25, 25, 25);
+    border-radius: 10px;
+    color: white;
+    width: fit-content;
+    height: 40px;
+    font: normal 16px sans-serif;
+    font-weight: bold;
 }
 
 #result{

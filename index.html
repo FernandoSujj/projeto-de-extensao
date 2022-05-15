@@ -28,8 +28,11 @@
     <main>
 
         <div class="div-main">
-            <img src="./imagens/lousa.png" class="img-main">
-            <p class="texto-main">Matemática <br> na <br> prática</p>
+            <img src="./imagens/lousa.png" class="img-main-fundo">
+            <div class="sobreposto">
+                <img src="./imagens/logo-animal.png" class="img-main-sec">
+                <p class="texto-main">Matemática <br> na <br> prática</p>
+            </div>
         </div>
         
         <!--Menu-->
@@ -42,23 +45,117 @@
             <div class="sidebar">
                 <div class="header-menu">Menu</div>
                 
-                    <a href="#" class="active" id="a-menu">
+                    <a href="aritmetica.html" class="active" id="a-menu">
                         <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
-                        <span>Testeteste</span>
+                        <span>Aritmética</span>
                     </a>
-                    <a href="#" class="active" id="a-menu">
+                    <a href="bhaskara.html" class="active" id="a-menu">
                         <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
-                        <span>Testeteste</span>
+                        <span>Bhaskara</span>
                     </a>
-                    <a href="#" class="active" id="a-menu">
+                    <a href="pitagoras.html" class="active" id="a-menu">
                         <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
-                        <span>Testeteste</span>
+                        <span>Pitágoras</span>
+                    </a>
+                    <a href="regra-de-3.html" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Regra de 3</span>
+                    </a>
+                    <a href="tabuada.html" class="active" id="a-menu">
+                        <i style="color: #fff;" class="fa-solid fa-calculator fa"></i>
+                        <span>Tabuada</span>
                     </a>
             </div>
         </div>
 
-        
-        
+        <section class="lista-cards">
+            <!--Card1-->
+            <div class="item-lista"> 
+                <div class="card">
+                    <img src="./imagens/operadores/mais.png" width="200px" height="180px">
+                    <div class="card-content">
+                        <p class="titulo-bloco2">Aritmética</p>
+                        <p class="card-text"> A aritmética é a base da matématica, tendo quatro operações, sendo a adição, subtração, multiplicação e a divisão.</p>
+                        
+                        <div class="position-btn">
+                            <a href="aritmetica.html">
+                                <input type="button" class="card-btn" value="Saiba mais">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card2-->
+            <div class="item-lista"> 
+                <div class="card">
+                    <img src="./imagens/formulabhaskara.png" width="280px" height="180px">
+                    <div class="card-content">
+                        <p class="titulo-bloco2">Bhaskara</p>
+                        <p class="card-text">Bhaskara é uma das principais fórmulas matemáticas. Tendo como propósito resolver equações quadráticas.</p>
+                        
+                        <div class="position-btn">
+                            <a href="bhaskara.html">
+                                <input type="button" class="card-btn" value="Saiba mais">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card3-->
+            <div class="item-lista"> 
+                <div class="card">
+                    <img src="./imagens/trigonometria-triangulo-retangulo.png" width="270px" height="180px">
+                    <div class="card-content">
+                        <p class="titulo-bloco2">Pitágoras</p>
+                        <p class="card-text">Um dos principais teoremas da geometria é o Teorema de Pitágoras. É representado pela fórmula (c²= a²+b²).</p>
+                        
+                        <div class="position-btn">
+                            <a href="pitagoras.html">
+                                <input type="button" class="card-btn" value="Saiba mais">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lista-cards">
+            <!--Card4-->
+            <div class="item-lista"> 
+                <div class="card">
+                    <img src="./imagens/exercicio-regra1.PNG" width="280px" height="180px">
+                    <div class="card-content">
+                        <p class="titulo-bloco2">Regra de 3</p>
+                        <p class="card-text"> A regra de três é um processo matemático para a resolução de muitos problemas que envolvem duas ou mais grandezas diretamente ou inversamente proporcionais.</p>
+                        
+                        <div class="position-btn">
+                            <a href="regra-de-3.html">
+                                <input type="button" class="card-btn" value="Saiba mais">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Card5-->
+            <div class="item-lista"> 
+                <div class="card">
+                    <img src="./imagens/operadores/multiplicacao.png" width="200px" height="180px">
+                    <div class="card-content">
+                        <p class="titulo-bloco2">Tabuada</p>
+                        <p class="card-text"> A tabuada é uma tabela utilizada para fazer os cálculos matemáticos de multiplicação.</p>
+                        
+                        <div class="position-btn">
+                            <a href="tabuada.html">
+                                <input type="button" class="card-btn" value="Saiba mais">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
         <!--Caculadora-->
         <div class="calc-bar-collapsible">
             <button id="calc-btn" type="button" class="collapsible">Calculadora
@@ -109,20 +206,6 @@
                 </div>
             </div>
         </div>
-        <section>
-            <p>Testeteste</p>   
-        <p>Testeteste</p>
-        <p>Testeteste</p>
-        <p>Testeteste</p>
-        <p>Testeteste</p>   
-        <p>Testeteste</p>
-        <p>Testeteste</p>
-        <p>Testeteste</p>
-        <p>Testeteste</p>   
-        <p>Testeteste</p>
-        <p>Testeteste</p>
-        <p>Testeteste</p>
-        </section>
     </main>
 
     <footer>
