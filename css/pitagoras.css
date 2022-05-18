@@ -43,13 +43,13 @@ input{
 
 #aInput{
     position: relative;
-    margin-left:890px;
-    bottom: 60px;
+    margin-left: 66%;
+    bottom: 58px;
 }
 
 #bInput{
     position: relative;
-    margin-left: 890px;
+    margin-left: 66%;
     bottom:40px;
 }
 
@@ -57,7 +57,7 @@ input{
 #button{
     position: relative;
     width:70px;
-    margin-left:640px;
+    margin-left: 50%;
     top: 30px;
     background: rgb(25, 25, 25);
     border-radius: 10px;
@@ -76,7 +76,7 @@ input{
     text-align: center;
     font-weight:bold;
     font-family:sans-serif;
-    margin-left:890px;
+    margin-left: 66%;
     bottom: 25px;
     border: solid 1px black;
 }
