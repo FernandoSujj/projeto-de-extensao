@@ -110,7 +110,6 @@ header{
     font: 16px;
 }
 /*--------------Menu-------------*/
-
 .sidebar{
     position: fixed;
     bottom: 0;
@@ -162,11 +161,12 @@ header{
 }
 
 #check{
+    position: absolute;
     display: none;
 }
 
 label #btn-menu, label #cancel-menu{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     height: 45px;
